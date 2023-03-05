@@ -1,14 +1,17 @@
-import { PostMetadata } from "interfaces/PostMetadata";
+import { PostMetadata } from "@/interfaces/PostMetadata";
 import fs from "fs";
 import matter from "gray-matter";
 
-export const getPostMetadata = (): PostMetadata[] => {
-  const folder = "posts/";
+export const getPostMetadata = (country?: string): PostMetadata[] => {
+  const folder = country ? `posts/${country}/` : "posts/";
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) => file.endsWith(".md"));
 
   const posts = markdownPosts.map((fileName) => {
-    const fileContents = fs.readFileSync(`posts/${fileName}`, "utf8");
+    const fileContents = fs.readFileSync(
+      `posts/${country}/${fileName}`,
+      "utf8"
+    );
     const matterResult = matter(fileContents);
     return {
       title: matterResult.data.title,
