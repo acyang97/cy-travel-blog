@@ -1,7 +1,6 @@
 import fs from "fs";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
-import { getPostMetadata } from "utils/getPostMetadata";
 import { countriesTravelledTo } from "../../countries";
 
 interface PostPageSlugs {
@@ -9,13 +8,20 @@ interface PostPageSlugs {
   postSlug: string;
 }
 
-// const getPostContent = (slug: string) => {
-//   const folder = "posts/";
-//   const file = `${folder}${slug}.md`;
-//   const content = fs.readFileSync(file, "utf8");
-//   const matterResult = matter(content);
-//   return matterResult;
-// };
+interface Props {
+  params: {
+    countrySlug: string;
+    postSlug: string;
+  };
+}
+
+const getPostContent = (countrySlug: string, postSlug: string) => {
+  const folder = "posts/";
+  const file = `${folder}${countrySlug}/${postSlug}.md`;
+  const content = fs.readFileSync(file, "utf8");
+  const matterResult = matter(content);
+  return matterResult;
+};
 
 export const generateStaticParams = async () => {
   let paths: PostPageSlugs[] = [];
@@ -30,17 +36,15 @@ export const generateStaticParams = async () => {
   return paths;
 };
 
-const PostPage = (props: any) => {
-  // const slug: string = props.params.slug;
-  // const post = getPostContent(slug);
-  // console.log(props);
+const PostPage = (props: Props) => {
+  const { countrySlug, postSlug } = props.params;
+  const post = getPostContent(countrySlug, postSlug);
   return (
     <p>
-      {/* {props} */}
-      {/* <h1 className="text-2xl text-violet-600">{post.data.title}</h1>
+      <h1 className="text-2xl text-violet-600">{post.data.title}</h1>
       <article className="prose lg:prose-xl">
         <Markdown>{post.content}</Markdown>
-      </article> */}
+      </article>
     </p>
   );
 };
