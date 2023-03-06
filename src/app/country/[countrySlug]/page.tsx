@@ -1,4 +1,5 @@
 import { Country } from "@/interfaces/Country.interface";
+import { useRouter } from "next/router";
 import { getPostMetadata } from "utils/getPostMetadata";
 import { countriesTravelledTo } from "../countries";
 import CountryPostPreview from "./CountryPostPreview";
@@ -15,6 +16,7 @@ export const generateStaticParams = async () => {
 };
 
 const CountryPage = (props: Props) => {
+  // const router = useRouter();
   const { countrySlug } = props.params;
   // assume I have the ability to find out what are the posts based on the director
   // so I can technically use the PostPreview from the

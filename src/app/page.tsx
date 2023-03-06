@@ -9,13 +9,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 const HomePage = () => {
   // I want to read all these posts
-  const listOfCountries = countriesTravelledTo;
   const countruyPreviews = countriesTravelledTo.map((country) => (
     <CountryPreview key={country.name} {...country} />
-  ));
-  const postMetada = getPostMetadata();
-  const postPreviews = postMetada.map((post) => (
-    <PostPreview key={post.slug} {...post} />
   ));
 
   return (
