@@ -1,8 +1,10 @@
 import { Country } from "@/interfaces/Country.interface";
 import { useRouter } from "next/router";
+import { checkIfCountryExist } from "utils/country.utils";
 import { getPostMetadata } from "utils/getPostMetadata";
 import { countriesTravelledTo } from "../countries";
 import CountryPostPreview from "./CountryPostPreview";
+import { notFound } from "next/navigation";
 
 interface Props {
   params: {
@@ -16,11 +18,12 @@ export const generateStaticParams = async () => {
 };
 
 const CountryPage = (props: Props) => {
-  // const router = useRouter();
   const { countrySlug } = props.params;
-  // assume I have the ability to find out what are the posts based on the director
-  // so I can technically use the PostPreview from the
-  // for now, maybe I would just list
+
+  if (!checkIfCountryExist(countrySlug)) {
+    notFound();
+  }
+
   const postMetadata = getPostMetadata(countrySlug);
   const postPreviews = postMetadata.map((post) => (
     <CountryPostPreview key={post.slug} post={post} slug={countrySlug} />
