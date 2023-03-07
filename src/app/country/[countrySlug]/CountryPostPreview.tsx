@@ -8,7 +8,6 @@ interface Props {
 }
 const CountryPostPreview = (props: Props) => {
   const { post, slug } = props;
-  console.log("country", slug);
   return (
     <div className="border border-violet-200 p-4 rounded-md shadow-md bg-white">
       <Link href={`country/${slug}/${post.slug}`}>

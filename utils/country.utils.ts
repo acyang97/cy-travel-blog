@@ -5,3 +5,21 @@ export const checkIfCountryExist = (countryName: string): Boolean => {
   const countryNames = countriesTravelledTo.map((country) => country.name);
   return _.includes(countryNames, countryName);
 };
+
+export interface checkIfPostExistByCountryOutput {
+  countryNameExist: Boolean;
+  postNameExist: Boolean;
+}
+
+export const checkIfPostExistByCountry = (
+  countryName: string,
+  postName: string
+): checkIfPostExistByCountryOutput => {
+  const country = _.find(countriesTravelledTo, { name: countryName });
+  const countryNameExist = !_.isNil(country);
+  const postNameExist = _.includes(country?.posts, postName);
+  return {
+    countryNameExist,
+    postNameExist,
+  };
+};

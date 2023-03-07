@@ -1,6 +1,8 @@
 import fs from "fs";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
+import { notFound } from "next/navigation";
+import { checkIfPostExistByCountry } from "utils/country.utils";
 import { countriesTravelledTo } from "../../countries";
 
 interface PostPageSlugs {
@@ -38,6 +40,14 @@ export const generateStaticParams = async () => {
 
 const PostPage = (props: Props) => {
   const { countrySlug, postSlug } = props.params;
+  const { countryNameExist, postNameExist } = checkIfPostExistByCountry(
+    countrySlug,
+    postSlug
+  );
+  if (!countryNameExist || !postNameExist) {
+    // TODO: Update the logic here to configure it more nicely depending on which is missing
+    notFound();
+  }
   const post = getPostContent(countrySlug, postSlug);
   return (
     <p>
