@@ -1,13 +1,12 @@
-import { Country } from "@/interfaces/Country.interface";
-import { useRouter } from "next/router";
+"use cient";
 import {
   checkIfCountryExist,
   checkIfCountryExistHasPost,
-} from "utils/country.utils";
-import { getPostMetadata } from "utils/getPostMetadata";
-import { countriesTravelledTo } from "../countries";
+} from "@/utils/country.utils";
+import { getPostMetadata } from "@/utils/getPostMetadata";
 import CountryPostPreview from "./CountryPostPreview";
 import { notFound } from "next/navigation";
+import { countriesTravelledTo } from "@/constants/country.constants";
 
 interface Props {
   params: {
@@ -36,7 +35,11 @@ const CountryPage = (props: Props) => {
   ));
 
   return (
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-2">{postPreviews}</div>
+    <div className="mx-auto max-w-2xl px-6">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        {postPreviews}
+      </div>
+    </div>
   );
 };
 

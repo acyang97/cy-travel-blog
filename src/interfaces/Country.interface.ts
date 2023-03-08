@@ -1,6 +1,8 @@
 export interface Country {
   name: string;
-  year: number;
+  year?: number;
   posts: string[];
+  dialCode: string;
+  visited: boolean;
   code?: string;
 }

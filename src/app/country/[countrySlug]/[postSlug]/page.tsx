@@ -2,8 +2,8 @@ import fs from "fs";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
 import { notFound } from "next/navigation";
-import { checkIfPostExistByCountry } from "utils/country.utils";
-import { countriesTravelledTo } from "../../countries";
+import { checkIfPostExistByCountry } from "@/utils/country.utils";
+import { countriesTravelledTo } from "@/constants/country.constants";
 
 interface PostPageSlugs {
   countrySlug: string;
@@ -50,12 +50,12 @@ const PostPage = (props: Props) => {
   }
   const post = getPostContent(countrySlug, postSlug);
   return (
-    <p>
+    <div className="mx-auto  max-w-2xl px-6">
       <h1 className="text-2xl text-violet-600">{post.data.title}</h1>
       <article className="prose lg:prose-xl">
         <Markdown>{post.content}</Markdown>
       </article>
-    </p>
+    </div>
   );
 };
 

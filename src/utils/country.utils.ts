@@ -1,4 +1,4 @@
-import { countriesTravelledTo } from "@/app/country/countries";
+import { countriesTravelledTo } from "@/constants/country.constants";
 import _ from "lodash";
 
 export const checkIfCountryExist = (countryName: string): Boolean => {
