@@ -1,6 +1,9 @@
 import { Country } from "@/interfaces/Country.interface";
 import { useRouter } from "next/router";
-import { checkIfCountryExist } from "utils/country.utils";
+import {
+  checkIfCountryExist,
+  checkIfCountryExistHasPost,
+} from "utils/country.utils";
 import { getPostMetadata } from "utils/getPostMetadata";
 import { countriesTravelledTo } from "../countries";
 import CountryPostPreview from "./CountryPostPreview";
@@ -20,7 +23,10 @@ export const generateStaticParams = async () => {
 const CountryPage = (props: Props) => {
   const { countrySlug } = props.params;
 
-  if (!checkIfCountryExist(countrySlug)) {
+  if (
+    !checkIfCountryExist(countrySlug) ||
+    !checkIfCountryExistHasPost(countrySlug)
+  ) {
     notFound();
   }
 

@@ -5,7 +5,16 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: {},
+        secondary: {},
+        tertiary: {},
+      },
+      fontFamily: {
+        main: ["Nunito"],
+      },
+    },
   },
   plugins: [require("@tailwindcss/typography")],
 };

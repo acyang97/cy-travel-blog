@@ -6,6 +6,11 @@ export const checkIfCountryExist = (countryName: string): Boolean => {
   return _.includes(countryNames, countryName);
 };
 
+export const checkIfCountryExistHasPost = (countryName: string): Boolean => {
+  const country = _.find(countriesTravelledTo, { name: countryName });
+  return country?.posts.length !== 0;
+};
+
 export interface checkIfPostExistByCountryOutput {
   countryNameExist: Boolean;
   postNameExist: Boolean;
