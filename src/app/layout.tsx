@@ -1,9 +1,7 @@
 "use client";
-import Link from "next/link";
 import "../../styles/global.css";
 import Image from "next/image";
 import HomePageHeaderImage from "../../public/images/HomePage/home-page-header.jpg";
-import { useIsDesktop } from "@/hooks/useIsDesktop";
 
 export default function RootLayout({
   children,
