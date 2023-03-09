@@ -7,6 +7,7 @@ import { getPostMetadata } from "@/utils/getPostMetadata";
 import CountryPostPreview from "./CountryPostPreview";
 import { notFound } from "next/navigation";
 import { countriesTravelledTo } from "@/constants/country.constants";
+import ScrollUp from "../../../components/ScrollUp";
 
 interface Props {
   params: {
@@ -35,9 +36,12 @@ const CountryPage = (props: Props) => {
   ));
 
   return (
-    <div className="mx-auto max-w-2xl px-6">
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-        {postPreviews}
+    <div>
+      <ScrollUp />
+      <div className="mx-auto max-w-2xl px-6">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          {postPreviews}
+        </div>
       </div>
     </div>
   );

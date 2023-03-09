@@ -1,11 +1,7 @@
-// import Image from 'next/image'
-import { Inter } from "@next/font/google";
 import CountryPreview from "./CountryPreview";
 import { countriesTravelledTo } from "@/constants/country.constants";
 import Image from "next/image";
 import HomePageHeaderImage from "../../public/images/HomePage/home-page-header.jpg";
-// import styles from './page.module.css'
-const inter = Inter({ subsets: ["latin"] });
 
 const HomePage = () => {
   const header = (

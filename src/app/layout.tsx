@@ -1,28 +1,27 @@
 "use client";
+import ScrollUp from "@/components/ScrollUp";
 import "../../styles/global.css";
+import AppFooter from "./AppFooter";
+import AppNavBar from "./AppNavBar";
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const footer = (
-    <footer>
-      <div className="border-t border-slate-400 mt-6 py-6 text-center text-slate-400">
-        <br />
-        <h3>Developed by me</h3>
-      </div>
-    </footer>
-  );
   return (
     <html>
       <head />
       <body className="font-main">
-        <div>
-          <div className="">{children}</div>
-          {/* <div className="mx-auto max-w-2xl px-6">{children}</div> */}
-          {footer}
-        </div>
+        <main className="relative">
+          <AppNavBar />
+          <div className="relative">
+            <div className="flex flex-col h-screen">
+              <div className="flex-grow">{children}</div>
+              <AppFooter />
+            </div>
+          </div>
+        </main>
       </body>
     </html>
   );

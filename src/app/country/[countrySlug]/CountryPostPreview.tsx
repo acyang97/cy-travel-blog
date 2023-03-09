@@ -1,4 +1,3 @@
-import { Country } from "@/interfaces/Country.interface";
 import { PostMetadata } from "@/interfaces/PostMetadata";
 import Link from "next/link";
 
