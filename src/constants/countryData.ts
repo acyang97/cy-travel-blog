@@ -1,4 +1,4 @@
-import { Country } from "@/interfaces/Country.interface";
+import { Continent, Country } from "@/interfaces/Country.interface";
 
 export const countriesData: Country[] = [
   {
@@ -7,6 +7,7 @@ export const countriesData: Country[] = [
     code: "AF",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Aland Islands",
@@ -14,6 +15,7 @@ export const countriesData: Country[] = [
     code: "AX",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Albania",
@@ -22,6 +24,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2022,
     posts: ["post-1", "post-2", "post-3"],
+    continent: Continent.EUROPE,
   },
   {
     name: "Algeria",
@@ -29,13 +32,15 @@ export const countriesData: Country[] = [
     code: "DZ",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
-    name: "AmericanSamoa",
+    name: "American Samoa",
     dialCode: "+1684",
     code: "AS",
     visited: false,
     posts: [],
+    continent: Continent.OCEANIA,
   },
   {
     name: "Andorra",
@@ -43,6 +48,7 @@ export const countriesData: Country[] = [
     code: "AD",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Angola",
@@ -50,6 +56,7 @@ export const countriesData: Country[] = [
     code: "AO",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Anguilla",
@@ -57,6 +64,7 @@ export const countriesData: Country[] = [
     code: "AI",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Antarctica",
@@ -64,6 +72,7 @@ export const countriesData: Country[] = [
     code: "AQ",
     visited: false,
     posts: [],
+    continent: Continent.ANTARCTICA,
   },
   {
     name: "Antigua and Barbuda",
@@ -71,6 +80,7 @@ export const countriesData: Country[] = [
     code: "AG",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Argentina",
@@ -78,6 +88,7 @@ export const countriesData: Country[] = [
     code: "AR",
     visited: false,
     posts: [],
+    continent: Continent.SOUTH_AMERICA,
   },
   {
     name: "Armenia",
@@ -85,6 +96,7 @@ export const countriesData: Country[] = [
     code: "AM",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Aruba",
@@ -92,6 +104,7 @@ export const countriesData: Country[] = [
     code: "AW",
     visited: false,
     posts: [],
+    continent: Continent.SOUTH_AMERICA,
   },
   {
     name: "Australia",
@@ -99,6 +112,7 @@ export const countriesData: Country[] = [
     code: "AU",
     visited: true,
     posts: [],
+    continent: Continent.OCEANIA,
   },
   {
     name: "Austria",
@@ -106,6 +120,7 @@ export const countriesData: Country[] = [
     code: "AT",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Azerbaijan",
@@ -113,6 +128,7 @@ export const countriesData: Country[] = [
     code: "AZ",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Bahamas",
@@ -120,6 +136,7 @@ export const countriesData: Country[] = [
     code: "BS",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Bahrain",
@@ -127,6 +144,7 @@ export const countriesData: Country[] = [
     code: "BH",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Bangladesh",
@@ -134,6 +152,7 @@ export const countriesData: Country[] = [
     code: "BD",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Barbados",
@@ -141,6 +160,7 @@ export const countriesData: Country[] = [
     code: "BB",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Belarus",
@@ -148,6 +168,7 @@ export const countriesData: Country[] = [
     code: "BY",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Belgium",
@@ -155,6 +176,7 @@ export const countriesData: Country[] = [
     code: "BE",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Belize",
@@ -162,6 +184,7 @@ export const countriesData: Country[] = [
     code: "BZ",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Benin",
@@ -169,6 +192,7 @@ export const countriesData: Country[] = [
     code: "BJ",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Bermuda",
@@ -176,6 +200,7 @@ export const countriesData: Country[] = [
     code: "BM",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Bhutan",
@@ -183,13 +208,15 @@ export const countriesData: Country[] = [
     code: "BT",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
-    name: "Bolivia, Plurinational State of",
+    name: "Bolivia",
     dialCode: "+591",
     code: "BO",
     visited: false,
     posts: [],
+    continent: Continent.SOUTH_AMERICA,
   },
   {
     name: "Bosnia and Herzegovina",
@@ -198,6 +225,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2022,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Botswana",
@@ -205,6 +233,7 @@ export const countriesData: Country[] = [
     code: "BW",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Brazil",
@@ -212,13 +241,7 @@ export const countriesData: Country[] = [
     code: "BR",
     visited: false,
     posts: [],
-  },
-  {
-    name: "British Indian Ocean Territory",
-    dialCode: "+246",
-    code: "IO",
-    visited: false,
-    posts: [],
+    continent: Continent.SOUTH_AMERICA,
   },
   {
     name: "Brunei",
@@ -227,6 +250,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2016,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Bulgaria",
@@ -234,6 +258,7 @@ export const countriesData: Country[] = [
     code: "BG",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Burkina Faso",
@@ -241,6 +266,7 @@ export const countriesData: Country[] = [
     code: "BF",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Burundi",
@@ -248,6 +274,7 @@ export const countriesData: Country[] = [
     code: "BI",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Cambodia",
@@ -256,6 +283,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2019,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Cameroon",
@@ -263,6 +291,7 @@ export const countriesData: Country[] = [
     code: "CM",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Canada",
@@ -270,6 +299,7 @@ export const countriesData: Country[] = [
     code: "CA",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Cape Verde",
@@ -277,6 +307,7 @@ export const countriesData: Country[] = [
     code: "CV",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Cayman Islands",
@@ -284,6 +315,7 @@ export const countriesData: Country[] = [
     code: "KY",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Central African Republic",
@@ -291,6 +323,7 @@ export const countriesData: Country[] = [
     code: "CF",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Chad",
@@ -298,6 +331,7 @@ export const countriesData: Country[] = [
     code: "TD",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Chile",
@@ -305,6 +339,7 @@ export const countriesData: Country[] = [
     code: "CL",
     visited: false,
     posts: [],
+    continent: Continent.SOUTH_AMERICA,
   },
   {
     name: "China",
@@ -313,20 +348,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2019,
     posts: [],
-  },
-  {
-    name: "Christmas Island",
-    dialCode: "+61",
-    code: "CX",
-    visited: false,
-    posts: [],
-  },
-  {
-    name: "Cocos (Keeling) Islands",
-    dialCode: "+61",
-    code: "CC",
-    visited: false,
-    posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Colombia",
@@ -334,6 +356,7 @@ export const countriesData: Country[] = [
     code: "CO",
     visited: false,
     posts: [],
+    continent: Continent.SOUTH_AMERICA,
   },
   {
     name: "Comoros",
@@ -341,6 +364,7 @@ export const countriesData: Country[] = [
     code: "KM",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Congo",
@@ -348,6 +372,7 @@ export const countriesData: Country[] = [
     code: "CG",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Congo, The Democratic Republic of the Congo",
@@ -355,6 +380,7 @@ export const countriesData: Country[] = [
     code: "CD",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Cook Islands",
@@ -362,6 +388,7 @@ export const countriesData: Country[] = [
     code: "CK",
     visited: false,
     posts: [],
+    continent: Continent.OCEANIA,
   },
   {
     name: "Costa Rica",
@@ -369,6 +396,7 @@ export const countriesData: Country[] = [
     code: "CR",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Cote d'Ivoire",
@@ -376,6 +404,7 @@ export const countriesData: Country[] = [
     code: "CI",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Croatia",
@@ -384,6 +413,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2022,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Cuba",
@@ -391,6 +421,7 @@ export const countriesData: Country[] = [
     code: "CU",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Cyprus",
@@ -398,6 +429,7 @@ export const countriesData: Country[] = [
     code: "CY",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Czech Republic",
@@ -406,6 +438,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2022,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Denmark",
@@ -413,6 +446,7 @@ export const countriesData: Country[] = [
     code: "DK",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Djibouti",
@@ -420,13 +454,7 @@ export const countriesData: Country[] = [
     code: "DJ",
     visited: false,
     posts: [],
-  },
-  {
-    name: "Dominica",
-    dialCode: "+1767",
-    code: "DM",
-    visited: false,
-    posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Dominican Republic",
@@ -434,6 +462,7 @@ export const countriesData: Country[] = [
     code: "DO",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Ecuador",
@@ -441,6 +470,7 @@ export const countriesData: Country[] = [
     code: "EC",
     visited: false,
     posts: [],
+    continent: Continent.SOUTH_AMERICA,
   },
   {
     name: "Egypt",
@@ -448,6 +478,7 @@ export const countriesData: Country[] = [
     code: "EG",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "El Salvador",
@@ -455,6 +486,7 @@ export const countriesData: Country[] = [
     code: "SV",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Equatorial Guinea",
@@ -462,6 +494,7 @@ export const countriesData: Country[] = [
     code: "GQ",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Eritrea",
@@ -469,6 +502,7 @@ export const countriesData: Country[] = [
     code: "ER",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Estonia",
@@ -476,6 +510,7 @@ export const countriesData: Country[] = [
     code: "EE",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Ethiopia",
@@ -483,6 +518,7 @@ export const countriesData: Country[] = [
     code: "ET",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Falkland Islands (Malvinas)",
@@ -490,6 +526,7 @@ export const countriesData: Country[] = [
     code: "FK",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Faroe Islands",
@@ -497,6 +534,7 @@ export const countriesData: Country[] = [
     code: "FO",
     visited: false,
     posts: [],
+    continent: Continent.SOUTH_AMERICA,
   },
   {
     name: "Fiji",
@@ -504,6 +542,7 @@ export const countriesData: Country[] = [
     code: "FJ",
     visited: false,
     posts: [],
+    continent: Continent.OCEANIA,
   },
   {
     name: "Finland",
@@ -511,6 +550,7 @@ export const countriesData: Country[] = [
     code: "FI",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "France",
@@ -518,6 +558,7 @@ export const countriesData: Country[] = [
     code: "FR",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "French Guiana",
@@ -525,6 +566,7 @@ export const countriesData: Country[] = [
     code: "GF",
     visited: false,
     posts: [],
+    continent: Continent.SOUTH_AMERICA,
   },
   {
     name: "French Polynesia",
@@ -532,6 +574,7 @@ export const countriesData: Country[] = [
     code: "PF",
     visited: false,
     posts: [],
+    continent: Continent.OCEANIA,
   },
   {
     name: "Gabon",
@@ -539,6 +582,7 @@ export const countriesData: Country[] = [
     code: "GA",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Gambia",
@@ -546,6 +590,7 @@ export const countriesData: Country[] = [
     code: "GM",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Georgia",
@@ -553,6 +598,7 @@ export const countriesData: Country[] = [
     code: "GE",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Germany",
@@ -561,6 +607,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2022,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Ghana",
@@ -568,6 +615,7 @@ export const countriesData: Country[] = [
     code: "GH",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Gibraltar",
@@ -575,6 +623,7 @@ export const countriesData: Country[] = [
     code: "GI",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Greece",
@@ -582,6 +631,7 @@ export const countriesData: Country[] = [
     code: "GR",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Greenland",
@@ -589,6 +639,7 @@ export const countriesData: Country[] = [
     code: "GL",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Grenada",
@@ -596,6 +647,7 @@ export const countriesData: Country[] = [
     code: "GD",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Guadeloupe",
@@ -603,6 +655,7 @@ export const countriesData: Country[] = [
     code: "GP",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Guam",
@@ -610,6 +663,7 @@ export const countriesData: Country[] = [
     code: "GU",
     visited: false,
     posts: [],
+    continent: Continent.OCEANIA,
   },
   {
     name: "Guatemala",
@@ -617,13 +671,7 @@ export const countriesData: Country[] = [
     code: "GT",
     visited: false,
     posts: [],
-  },
-  {
-    name: "Guernsey",
-    dialCode: "+44",
-    code: "GG",
-    visited: false,
-    posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Guinea",
@@ -631,6 +679,7 @@ export const countriesData: Country[] = [
     code: "GN",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Guinea-Bissau",
@@ -638,6 +687,7 @@ export const countriesData: Country[] = [
     code: "GW",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Guyana",
@@ -645,6 +695,7 @@ export const countriesData: Country[] = [
     code: "GY",
     visited: false,
     posts: [],
+    continent: Continent.SOUTH_AMERICA,
   },
   {
     name: "Haiti",
@@ -652,13 +703,7 @@ export const countriesData: Country[] = [
     code: "HT",
     visited: false,
     posts: [],
-  },
-  {
-    name: "Holy See (Vatican City State)",
-    dialCode: "+379",
-    code: "VA",
-    visited: false,
-    posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Honduras",
@@ -666,6 +711,7 @@ export const countriesData: Country[] = [
     code: "HN",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Hong Kong",
@@ -673,6 +719,7 @@ export const countriesData: Country[] = [
     code: "HK",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Hungary",
@@ -681,6 +728,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2022,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Iceland",
@@ -688,6 +736,7 @@ export const countriesData: Country[] = [
     code: "IS",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "India",
@@ -695,6 +744,7 @@ export const countriesData: Country[] = [
     code: "IN",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Indonesia",
@@ -703,13 +753,15 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2022,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
-    name: "Iran, Islamic Republic of Persian Gulf",
+    name: "Iran",
     dialCode: "+98",
     code: "IR",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Iraq",
@@ -717,6 +769,7 @@ export const countriesData: Country[] = [
     code: "IQ",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Ireland",
@@ -724,13 +777,7 @@ export const countriesData: Country[] = [
     code: "IE",
     visited: false,
     posts: [],
-  },
-  {
-    name: "Isle of Man",
-    dialCode: "+44",
-    code: "IM",
-    visited: false,
-    posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Israel",
@@ -738,6 +785,7 @@ export const countriesData: Country[] = [
     code: "IL",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Italy",
@@ -746,6 +794,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2013,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Jamaica",
@@ -753,6 +802,7 @@ export const countriesData: Country[] = [
     code: "JM",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Japan",
@@ -761,13 +811,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2019,
     posts: [],
-  },
-  {
-    name: "Jersey",
-    dialCode: "+44",
-    code: "JE",
-    visited: false,
-    posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Jordan",
@@ -776,6 +820,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2022,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Kazakhstan",
@@ -783,6 +828,7 @@ export const countriesData: Country[] = [
     code: "KZ",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Kenya",
@@ -790,6 +836,7 @@ export const countriesData: Country[] = [
     code: "KE",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Kiribati",
@@ -797,6 +844,7 @@ export const countriesData: Country[] = [
     code: "KI",
     visited: false,
     posts: [],
+    continent: Continent.OCEANIA,
   },
   {
     name: "North Korea",
@@ -804,6 +852,7 @@ export const countriesData: Country[] = [
     code: "KP",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "South Korea",
@@ -812,6 +861,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2019,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Kuwait",
@@ -819,6 +869,7 @@ export const countriesData: Country[] = [
     code: "KW",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Kyrgyzstan",
@@ -826,6 +877,7 @@ export const countriesData: Country[] = [
     code: "KG",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Laos",
@@ -834,6 +886,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2019,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Latvia",
@@ -841,6 +894,7 @@ export const countriesData: Country[] = [
     code: "LV",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Lebanon",
@@ -848,6 +902,7 @@ export const countriesData: Country[] = [
     code: "LB",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Lesotho",
@@ -855,6 +910,7 @@ export const countriesData: Country[] = [
     code: "LS",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Liberia",
@@ -862,13 +918,15 @@ export const countriesData: Country[] = [
     code: "LR",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
-    name: "Libyan Arab Jamahiriya",
+    name: "Libya",
     dialCode: "+218",
     code: "LY",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Liechtenstein",
@@ -876,6 +934,7 @@ export const countriesData: Country[] = [
     code: "LI",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Lithuania",
@@ -883,6 +942,7 @@ export const countriesData: Country[] = [
     code: "LT",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Luxembourg",
@@ -890,6 +950,7 @@ export const countriesData: Country[] = [
     code: "LU",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Macao",
@@ -897,6 +958,7 @@ export const countriesData: Country[] = [
     code: "MO",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Macedonia",
@@ -904,6 +966,7 @@ export const countriesData: Country[] = [
     code: "MK",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Madagascar",
@@ -911,6 +974,7 @@ export const countriesData: Country[] = [
     code: "MG",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Malawi",
@@ -918,6 +982,7 @@ export const countriesData: Country[] = [
     code: "MW",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Malaysia",
@@ -926,6 +991,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2022,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Maldives",
@@ -933,6 +999,7 @@ export const countriesData: Country[] = [
     code: "MV",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Mali",
@@ -940,6 +1007,7 @@ export const countriesData: Country[] = [
     code: "ML",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Malta",
@@ -948,6 +1016,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2022,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Marshall Islands",
@@ -955,6 +1024,7 @@ export const countriesData: Country[] = [
     code: "MH",
     visited: false,
     posts: [],
+    continent: Continent.OCEANIA,
   },
   {
     name: "Martinique",
@@ -962,6 +1032,7 @@ export const countriesData: Country[] = [
     code: "MQ",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Mauritania",
@@ -969,6 +1040,7 @@ export const countriesData: Country[] = [
     code: "MR",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Mauritius",
@@ -976,13 +1048,7 @@ export const countriesData: Country[] = [
     code: "MU",
     visited: false,
     posts: [],
-  },
-  {
-    name: "Mayotte",
-    dialCode: "+262",
-    code: "YT",
-    visited: false,
-    posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Mexico",
@@ -991,6 +1057,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2022,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Micronesia",
@@ -998,6 +1065,7 @@ export const countriesData: Country[] = [
     code: "FM",
     visited: false,
     posts: [],
+    continent: Continent.OCEANIA,
   },
   {
     name: "Moldova",
@@ -1005,6 +1073,7 @@ export const countriesData: Country[] = [
     code: "MD",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Monaco",
@@ -1012,6 +1081,7 @@ export const countriesData: Country[] = [
     code: "MC",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Mongolia",
@@ -1019,6 +1089,7 @@ export const countriesData: Country[] = [
     code: "MN",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Montenegro",
@@ -1027,13 +1098,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2022,
     posts: [],
-  },
-  {
-    name: "Montserrat",
-    dialCode: "+1664",
-    code: "MS",
-    visited: false,
-    posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Morocco",
@@ -1041,6 +1106,7 @@ export const countriesData: Country[] = [
     code: "MA",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Mozambique",
@@ -1048,6 +1114,7 @@ export const countriesData: Country[] = [
     code: "MZ",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Myanmar",
@@ -1055,6 +1122,7 @@ export const countriesData: Country[] = [
     code: "MM",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Namibia",
@@ -1063,6 +1131,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2019,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Nauru",
@@ -1070,6 +1139,7 @@ export const countriesData: Country[] = [
     code: "NR",
     visited: false,
     posts: [],
+    continent: Continent.OCEANIA,
   },
   {
     name: "Nepal",
@@ -1077,6 +1147,7 @@ export const countriesData: Country[] = [
     code: "NP",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Netherlands",
@@ -1084,13 +1155,7 @@ export const countriesData: Country[] = [
     code: "NL",
     visited: false,
     posts: [],
-  },
-  {
-    name: "Netherlands Antilles",
-    dialCode: "+599",
-    code: "AN",
-    visited: false,
-    posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "New Caledonia",
@@ -1098,6 +1163,7 @@ export const countriesData: Country[] = [
     code: "NC",
     visited: false,
     posts: [],
+    continent: Continent.OCEANIA,
   },
   {
     name: "New Zealand",
@@ -1106,6 +1172,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2017,
     posts: [],
+    continent: Continent.OCEANIA,
   },
   {
     name: "Nicaragua",
@@ -1113,6 +1180,7 @@ export const countriesData: Country[] = [
     code: "NI",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Niger",
@@ -1120,6 +1188,7 @@ export const countriesData: Country[] = [
     code: "NE",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Nigeria",
@@ -1127,27 +1196,7 @@ export const countriesData: Country[] = [
     code: "NG",
     visited: false,
     posts: [],
-  },
-  {
-    name: "Niue",
-    dialCode: "+683",
-    code: "NU",
-    visited: false,
-    posts: [],
-  },
-  {
-    name: "Norfolk Island",
-    dialCode: "+672",
-    code: "NF",
-    visited: false,
-    posts: [],
-  },
-  {
-    name: "Northern Mariana Islands",
-    dialCode: "+1670",
-    code: "MP",
-    visited: false,
-    posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Norway",
@@ -1155,6 +1204,7 @@ export const countriesData: Country[] = [
     code: "NO",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Oman",
@@ -1162,6 +1212,7 @@ export const countriesData: Country[] = [
     code: "OM",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Pakistan",
@@ -1169,6 +1220,7 @@ export const countriesData: Country[] = [
     code: "PK",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Palau",
@@ -1176,13 +1228,15 @@ export const countriesData: Country[] = [
     code: "PW",
     visited: false,
     posts: [],
+    continent: Continent.OCEANIA,
   },
   {
-    name: "Palestinian Territory, Occupied",
+    name: "Palestine",
     dialCode: "+970",
     code: "PS",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Panama",
@@ -1190,6 +1244,7 @@ export const countriesData: Country[] = [
     code: "PA",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Papua New Guinea",
@@ -1197,6 +1252,7 @@ export const countriesData: Country[] = [
     code: "PG",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Paraguay",
@@ -1204,6 +1260,7 @@ export const countriesData: Country[] = [
     code: "PY",
     visited: false,
     posts: [],
+    continent: Continent.SOUTH_AMERICA,
   },
   {
     name: "Peru",
@@ -1211,6 +1268,7 @@ export const countriesData: Country[] = [
     code: "PE",
     visited: false,
     posts: [],
+    continent: Continent.SOUTH_AMERICA,
   },
   {
     name: "Philippines",
@@ -1218,13 +1276,7 @@ export const countriesData: Country[] = [
     code: "PH",
     visited: false,
     posts: [],
-  },
-  {
-    name: "Pitcairn",
-    dialCode: "+872",
-    code: "PN",
-    visited: false,
-    posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Poland",
@@ -1232,6 +1284,7 @@ export const countriesData: Country[] = [
     code: "PL",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Portugal",
@@ -1239,6 +1292,7 @@ export const countriesData: Country[] = [
     code: "PT",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Puerto Rico",
@@ -1246,6 +1300,7 @@ export const countriesData: Country[] = [
     code: "PR",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Qatar",
@@ -1253,6 +1308,7 @@ export const countriesData: Country[] = [
     code: "QA",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Romania",
@@ -1260,6 +1316,7 @@ export const countriesData: Country[] = [
     code: "RO",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Russia",
@@ -1267,6 +1324,7 @@ export const countriesData: Country[] = [
     code: "RU",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Rwanda",
@@ -1274,6 +1332,7 @@ export const countriesData: Country[] = [
     code: "RW",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Reunion",
@@ -1281,6 +1340,7 @@ export const countriesData: Country[] = [
     code: "RE",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Saint Barthelemy",
@@ -1288,13 +1348,7 @@ export const countriesData: Country[] = [
     code: "BL",
     visited: false,
     posts: [],
-  },
-  {
-    name: "Saint Helena, Ascension and Tristan Da Cunha",
-    dialCode: "+290",
-    code: "SH",
-    visited: false,
-    posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Saint Kitts and Nevis",
@@ -1302,6 +1356,7 @@ export const countriesData: Country[] = [
     code: "KN",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Saint Lucia",
@@ -1309,6 +1364,7 @@ export const countriesData: Country[] = [
     code: "LC",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Saint Martin",
@@ -1316,6 +1372,7 @@ export const countriesData: Country[] = [
     code: "MF",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Saint Pierre and Miquelon",
@@ -1323,6 +1380,7 @@ export const countriesData: Country[] = [
     code: "PM",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Saint Vincent and the Grenadines",
@@ -1330,6 +1388,7 @@ export const countriesData: Country[] = [
     code: "VC",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Samoa",
@@ -1337,6 +1396,7 @@ export const countriesData: Country[] = [
     code: "WS",
     visited: false,
     posts: [],
+    continent: Continent.OCEANIA,
   },
   {
     name: "San Marino",
@@ -1344,6 +1404,7 @@ export const countriesData: Country[] = [
     code: "SM",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Sao Tome and Principe",
@@ -1351,6 +1412,7 @@ export const countriesData: Country[] = [
     code: "ST",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Saudi Arabia",
@@ -1358,6 +1420,7 @@ export const countriesData: Country[] = [
     code: "SA",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Senegal",
@@ -1365,6 +1428,7 @@ export const countriesData: Country[] = [
     code: "SN",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Serbia",
@@ -1372,6 +1436,7 @@ export const countriesData: Country[] = [
     code: "RS",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Seychelles",
@@ -1379,6 +1444,7 @@ export const countriesData: Country[] = [
     code: "SC",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Sierra Leone",
@@ -1386,6 +1452,7 @@ export const countriesData: Country[] = [
     code: "SL",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Singapore",
@@ -1394,6 +1461,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2023,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Slovakia",
@@ -1401,6 +1469,7 @@ export const countriesData: Country[] = [
     code: "SK",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Slovenia",
@@ -1408,6 +1477,7 @@ export const countriesData: Country[] = [
     code: "SI",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Solomon Islands",
@@ -1415,6 +1485,7 @@ export const countriesData: Country[] = [
     code: "SB",
     visited: false,
     posts: [],
+    continent: Continent.OCEANIA,
   },
   {
     name: "Somalia",
@@ -1422,6 +1493,7 @@ export const countriesData: Country[] = [
     code: "SO",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "South Africa",
@@ -1429,6 +1501,7 @@ export const countriesData: Country[] = [
     code: "ZA",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "South Sudan",
@@ -1436,13 +1509,7 @@ export const countriesData: Country[] = [
     code: "SS",
     visited: false,
     posts: [],
-  },
-  {
-    name: "South Georgia and the South Sandwich Islands",
-    dialCode: "+500",
-    code: "GS",
-    visited: false,
-    posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Spain",
@@ -1450,6 +1517,7 @@ export const countriesData: Country[] = [
     code: "ES",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Sri Lanka",
@@ -1457,6 +1525,7 @@ export const countriesData: Country[] = [
     code: "LK",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Sudan",
@@ -1464,6 +1533,7 @@ export const countriesData: Country[] = [
     code: "SD",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Suriname",
@@ -1471,6 +1541,7 @@ export const countriesData: Country[] = [
     code: "SR",
     visited: false,
     posts: [],
+    continent: Continent.SOUTH_AMERICA,
   },
   {
     name: "Svalbard and Jan Mayen",
@@ -1478,6 +1549,7 @@ export const countriesData: Country[] = [
     code: "SJ",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Swaziland",
@@ -1485,6 +1557,7 @@ export const countriesData: Country[] = [
     code: "SZ",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Sweden",
@@ -1492,6 +1565,7 @@ export const countriesData: Country[] = [
     code: "SE",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Switzerland",
@@ -1500,6 +1574,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2022,
     posts: ["post-1", "post-2", "post-3", "post-4", "post-5"],
+    continent: Continent.EUROPE,
   },
   {
     name: "Syria",
@@ -1507,6 +1582,7 @@ export const countriesData: Country[] = [
     code: "SY",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Taiwan",
@@ -1515,6 +1591,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2018,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Tajikistan",
@@ -1522,13 +1599,15 @@ export const countriesData: Country[] = [
     code: "TJ",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
-    name: "Tanzania, United Republic of Tanzania",
+    name: "Tanzania",
     dialCode: "+255",
     code: "TZ",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Thailand",
@@ -1537,6 +1616,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2022,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Timor-Leste",
@@ -1544,6 +1624,7 @@ export const countriesData: Country[] = [
     code: "TL",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Togo",
@@ -1551,13 +1632,7 @@ export const countriesData: Country[] = [
     code: "TG",
     visited: false,
     posts: [],
-  },
-  {
-    name: "Tokelau",
-    dialCode: "+690",
-    code: "TK",
-    visited: false,
-    posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Tonga",
@@ -1565,6 +1640,7 @@ export const countriesData: Country[] = [
     code: "TO",
     visited: false,
     posts: [],
+    continent: Continent.OCEANIA,
   },
   {
     name: "Trinidad and Tobago",
@@ -1572,6 +1648,7 @@ export const countriesData: Country[] = [
     code: "TT",
     visited: false,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Tunisia",
@@ -1579,6 +1656,7 @@ export const countriesData: Country[] = [
     code: "TN",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Turkey",
@@ -1586,6 +1664,7 @@ export const countriesData: Country[] = [
     code: "TR",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "Turkmenistan",
@@ -1593,13 +1672,7 @@ export const countriesData: Country[] = [
     code: "TM",
     visited: false,
     posts: [],
-  },
-  {
-    name: "Turks and Caicos Islands",
-    dialCode: "+1649",
-    code: "TC",
-    visited: false,
-    posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Tuvalu",
@@ -1607,6 +1680,7 @@ export const countriesData: Country[] = [
     code: "TV",
     visited: false,
     posts: [],
+    continent: Continent.OCEANIA,
   },
   {
     name: "Uganda",
@@ -1614,6 +1688,7 @@ export const countriesData: Country[] = [
     code: "UG",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Ukraine",
@@ -1621,6 +1696,7 @@ export const countriesData: Country[] = [
     code: "UA",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "United Arab Emirates",
@@ -1628,6 +1704,7 @@ export const countriesData: Country[] = [
     code: "AE",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "United Kingdom",
@@ -1635,6 +1712,7 @@ export const countriesData: Country[] = [
     code: "GB",
     visited: false,
     posts: [],
+    continent: Continent.EUROPE,
   },
   {
     name: "United States of America",
@@ -1643,6 +1721,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2022,
     posts: [],
+    continent: Continent.NORTH_AMERICA,
   },
   {
     name: "Uruguay",
@@ -1650,6 +1729,7 @@ export const countriesData: Country[] = [
     code: "UY",
     visited: false,
     posts: [],
+    continent: Continent.SOUTH_AMERICA,
   },
   {
     name: "Uzbekistan",
@@ -1657,6 +1737,7 @@ export const countriesData: Country[] = [
     code: "UZ",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Vanuatu",
@@ -1664,13 +1745,15 @@ export const countriesData: Country[] = [
     code: "VU",
     visited: false,
     posts: [],
+    continent: Continent.OCEANIA,
   },
   {
-    name: "Venezuela, Bolivarian Republic of Venezuela",
+    name: "Venezuela",
     dialCode: "+58",
     code: "VE",
     visited: false,
     posts: [],
+    continent: Continent.SOUTH_AMERICA,
   },
   {
     name: "Vietnam",
@@ -1679,27 +1762,7 @@ export const countriesData: Country[] = [
     visited: true,
     year: 2022,
     posts: [],
-  },
-  {
-    name: "Virgin Islands, British",
-    dialCode: "+1284",
-    code: "VG",
-    visited: false,
-    posts: [],
-  },
-  {
-    name: "Virgin Islands, U.S.",
-    dialCode: "+1340",
-    code: "VI",
-    visited: false,
-    posts: [],
-  },
-  {
-    name: "Wallis and Futuna",
-    dialCode: "+681",
-    code: "WF",
-    visited: false,
-    posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Yemen",
@@ -1707,6 +1770,7 @@ export const countriesData: Country[] = [
     code: "YE",
     visited: false,
     posts: [],
+    continent: Continent.ASIA,
   },
   {
     name: "Zambia",
@@ -1714,6 +1778,7 @@ export const countriesData: Country[] = [
     code: "ZM",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
   {
     name: "Zimbabwe",
@@ -1721,5 +1786,6 @@ export const countriesData: Country[] = [
     code: "ZW",
     visited: false,
     posts: [],
+    continent: Continent.AFRICA,
   },
 ];
