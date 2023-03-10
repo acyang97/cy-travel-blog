@@ -19,11 +19,11 @@ const HomePage = () => {
           </h1>
           {/* TODO: Update this */}
           <p className="my-8 mx-3 leading-relaxed">
-            A 26 year old Singaporean who loves travelling! I particularly enjoy
-            solo travelling to off the beaten path destinations! I find that
-            myself having the best experiences when I set off without a proper
-            plan! Aside from travelling, I also enjoy bouldering, photography
-            and football!
+            My name is Chun Yang, a 26 year old Singaporean who loves
+            travelling! I particularly enjoy solo travelling to off the beaten
+            path destinations! I find that myself having the best experiences
+            when I set off without a proper plan! Aside from travelling, I also
+            enjoy bouldering, photography and football!
           </p>
         </div>
       </div>
