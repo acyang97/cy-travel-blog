@@ -110,6 +110,7 @@ export const countriesData: Country[] = [
     name: "Australia",
     dialCode: "+61",
     code: "AU",
+    year: 2011,
     visited: true,
     posts: [],
     continent: Continent.OCEANIA,
