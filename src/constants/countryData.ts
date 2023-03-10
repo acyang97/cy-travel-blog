@@ -219,7 +219,7 @@ export const countriesData: Country[] = [
     continent: Continent.SOUTH_AMERICA,
   },
   {
-    name: "Bosnia and Herzegovina",
+    name: "Bosnia-and-Herzegovina",
     dialCode: "+387",
     code: "BA",
     visited: true,
@@ -432,7 +432,7 @@ export const countriesData: Country[] = [
     continent: Continent.EUROPE,
   },
   {
-    name: "Czech Republic",
+    name: "Czech-Republic",
     dialCode: "+420",
     code: "CZ",
     visited: true,
@@ -855,7 +855,7 @@ export const countriesData: Country[] = [
     continent: Continent.ASIA,
   },
   {
-    name: "South Korea",
+    name: "South-Korea",
     dialCode: "+82",
     code: "KR",
     visited: true,
@@ -1128,7 +1128,7 @@ export const countriesData: Country[] = [
     name: "Namibia",
     dialCode: "+264",
     code: "NA",
-    visited: true,
+    visited: false,
     year: 2019,
     posts: [],
     continent: Continent.AFRICA,
@@ -1158,7 +1158,7 @@ export const countriesData: Country[] = [
     continent: Continent.EUROPE,
   },
   {
-    name: "New Caledonia",
+    name: "New-Caledonia",
     dialCode: "+687",
     code: "NC",
     visited: false,
@@ -1166,7 +1166,7 @@ export const countriesData: Country[] = [
     continent: Continent.OCEANIA,
   },
   {
-    name: "New Zealand",
+    name: "New-Zealand",
     dialCode: "+64",
     code: "NZ",
     visited: true,
@@ -1699,7 +1699,7 @@ export const countriesData: Country[] = [
     continent: Continent.EUROPE,
   },
   {
-    name: "United Arab Emirates",
+    name: "UAE",
     dialCode: "+971",
     code: "AE",
     visited: false,
@@ -1707,7 +1707,7 @@ export const countriesData: Country[] = [
     continent: Continent.ASIA,
   },
   {
-    name: "United Kingdom",
+    name: "United-Kingdom",
     dialCode: "+44",
     code: "GB",
     visited: false,
@@ -1715,7 +1715,7 @@ export const countriesData: Country[] = [
     continent: Continent.EUROPE,
   },
   {
-    name: "United States of America",
+    name: "USA",
     dialCode: "+1",
     code: "US",
     visited: true,
@@ -1760,7 +1760,7 @@ export const countriesData: Country[] = [
     dialCode: "+84",
     code: "VN",
     visited: true,
-    year: 2022,
+    year: 2020,
     posts: [],
     continent: Continent.ASIA,
   },
