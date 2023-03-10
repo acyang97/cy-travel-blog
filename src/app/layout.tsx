@@ -1,5 +1,4 @@
 "use client";
-import ScrollUp from "@/components/ScrollUp";
 import "../../styles/global.css";
 import AppFooter from "./AppFooter";
 import AppNavBar from "./AppNavBar";

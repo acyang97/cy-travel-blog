@@ -18,12 +18,12 @@ const HomePage = () => {
             Welcome to my Travel Blog!
           </h1>
           {/* TODO: Update this */}
-          <p className="my-8 leading-relaxed">
-            Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing
-            tousled. Chambray dreamcatcher trust fund, kitsch vice godard
-            disrupt ramps hexagon mustache umami snackwave tilde chillwave ugh.
-            Pour-over meditation PBR&amp;B pickled ennui celiac mlkshk freegan
-            photo booth af fingerstache pitchfork.
+          <p className="my-8 mx-3 leading-relaxed">
+            A 26 year old Singaporean who loves travelling! I particularly enjoy
+            solo travelling to off the beaten path destinations! I find that
+            myself having the best experiences when I set off without a proper
+            plan! Aside from travelling, I also enjoy bouldering, photography
+            and football!
           </p>
         </div>
       </div>
@@ -37,8 +37,8 @@ const HomePage = () => {
   return (
     <div>
       {header}
-      <div className="mx-auto max-w-2xl px-6">
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+      <div className="mx-6 md:mx-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 content-center">
           {countruyPreviews}
         </div>
       </div>

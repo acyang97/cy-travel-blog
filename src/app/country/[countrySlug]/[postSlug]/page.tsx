@@ -18,7 +18,10 @@ interface Props {
   };
 }
 
-const getPostContent = (countrySlug: string, postSlug: string) => {
+const getPostContent = (
+  countrySlug: string,
+  postSlug: string
+): matter.GrayMatterFile<string> => {
   const folder = "posts/";
   const file = `${folder}${countrySlug}/${postSlug}.md`;
   const content = fs.readFileSync(file, "utf8");
