@@ -2,6 +2,7 @@ import CountryPreview from "./CountryPreview";
 import { countriesTravelledTo } from "@/constants/country.constants";
 import Image from "next/image";
 import HomePageHeaderImage from "../../public/images/HomePage/home-page-header.jpg";
+import AppMap from "@/components/AppMap";
 
 const HomePage = () => {
   const header = (
@@ -14,11 +15,11 @@ const HomePage = () => {
           src={HomePageHeaderImage}
         />
         <div className="text-center lg:w-2/3 w-full">
-          <h1 className="title-font text-6xl mb-4 font-medium text-gray-900">
+          <h1 className="title-font text-6xl mb-4 font-bold text-gray-900">
             Welcome to my Travel Blog!
           </h1>
           {/* TODO: Update this */}
-          <p className="my-8 mx-3 leading-relaxed">
+          <p className="mt-8 mb-2 mx-3 leading-relaxed">
             My name is Chun Yang, a 26 year old Singaporean who loves
             travelling! I particularly enjoy solo travelling to off the beaten
             path destinations! I find that myself having the best experiences
@@ -38,6 +39,7 @@ const HomePage = () => {
     <div>
       {header}
       <div className="mx-6 md:mx-12">
+        <AppMap />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 content-center">
           {countruyPreviews}
         </div>
