@@ -14,8 +14,10 @@ export interface Geometry {
   type: String;
   arcs: any;
   id: String;
-  properties: { name: string };
-  visited?: Boolean;
+  properties: {
+    name: string;
+    visited?: Boolean;
+  };
 }
 
 export const mapData: Geography = {
@@ -40,21 +42,21 @@ export const mapData: Geography = {
           type: "Polygon",
           arcs: [[13, 14, 15, 16, 17]],
           id: "ALB",
-          properties: { name: "Albania" },
-          visited: true,
+          properties: { name: "Albania", visited: true },
         },
         {
           type: "Polygon",
           arcs: [[18, 19, 20, 21, 22]],
           id: "ARE",
           properties: { name: "United Arab Emirates" },
-          visited: true,
         },
         {
           type: "MultiPolygon",
           arcs: [[[23, 24]], [[25, 26, 27, 28, 29, 30]]],
           id: "ARG",
-          properties: { name: "Argentina" },
+          properties: {
+            name: "Argentina",
+          },
         },
         {
           type: "Polygon",
@@ -72,8 +74,7 @@ export const mapData: Geography = {
           type: "MultiPolygon",
           arcs: [[[37]], [[38]]],
           id: "AUS",
-          properties: { name: "Australia" },
-          visited: true,
+          properties: { name: "Australia", visited: true },
         },
         {
           type: "Polygon",
@@ -133,8 +134,7 @@ export const mapData: Geography = {
           type: "Polygon",
           arcs: [[86, 87, 88, 89]],
           id: "BIH",
-          properties: { name: "Bosnia and Herzegovina" },
-          visited: true,
+          properties: { name: "Bosnia and Herzegovina", visited: true },
         },
         {
           type: "Polygon",
@@ -164,8 +164,7 @@ export const mapData: Geography = {
           type: "Polygon",
           arcs: [[114, 115]],
           id: "BRN",
-          properties: { name: "Brunei" },
-          visited: true,
+          properties: { name: "Brunei", visited: true },
         },
         {
           type: "Polygon",
@@ -226,8 +225,7 @@ export const mapData: Geography = {
           type: "Polygon",
           arcs: [[-47, 164, 165, 166, -43, 167, 168, 169]],
           id: "CHE",
-          properties: { name: "Switzerland" },
-          visited: true,
+          properties: { name: "Switzerland", visited: true },
         },
         {
           type: "MultiPolygon",
@@ -248,8 +246,7 @@ export const mapData: Geography = {
             ],
           ],
           id: "CHN",
-          properties: { name: "China" },
-          visited: true,
+          properties: { name: "China", visited: true },
         },
         {
           type: "Polygon",
@@ -308,15 +305,13 @@ export const mapData: Geography = {
           type: "Polygon",
           arcs: [[-49, 241, 242, 243]],
           id: "CZE",
-          properties: { name: "Czechia" },
-          visited: true,
+          properties: { name: "Czechia", visited: true },
         },
         {
           type: "Polygon",
           arcs: [[244, 245, -242, -48, -170, 246, 247, -61, 248, 249, 250]],
           id: "DEU",
-          properties: { name: "Germany" },
-          visited: true,
+          properties: { name: "Germany", visited: true },
         },
         {
           type: "Polygon",
@@ -489,8 +484,7 @@ export const mapData: Geography = {
           type: "Polygon",
           arcs: [[353, 354, 355, -90, 356, 357, 358]],
           id: "HRV",
-          properties: { name: "Croatia" },
-          visited: true,
+          properties: { name: "Croatia", visited: true },
         },
         {
           type: "Polygon",
@@ -502,8 +496,7 @@ export const mapData: Geography = {
           type: "Polygon",
           arcs: [[-40, 360, 361, 362, 363, 364, -359, 365]],
           id: "HUN",
-          properties: { name: "Hungary" },
-          visited: true,
+          properties: { name: "Hungary", visited: true },
         },
         {
           type: "MultiPolygon",
@@ -523,8 +516,7 @@ export const mapData: Geography = {
             [[381]],
           ],
           id: "IDN",
-          properties: { name: "Indonesia" },
-          visited: true,
+          properties: { name: "Indonesia", visited: true },
         },
         {
           type: "Polygon",
@@ -566,8 +558,7 @@ export const mapData: Geography = {
           type: "MultiPolygon",
           arcs: [[[408]], [[409]], [[410, 411, -308, -168, -42]]],
           id: "ITA",
-          properties: { name: "Italy" },
-          visited: true,
+          properties: { name: "Italy", visited: true },
         },
         {
           type: "Polygon",
@@ -579,15 +570,13 @@ export const mapData: Geography = {
           type: "Polygon",
           arcs: [[-403, 413, -398, 414, 415, -405, 416]],
           id: "JOR",
-          properties: { name: "Jordan" },
-          visited: true,
+          properties: { name: "Jordan", visited: true },
         },
         {
           type: "MultiPolygon",
           arcs: [[[417]], [[418]], [[419]]],
           id: "JPN",
-          properties: { name: "Japan" },
-          visited: true,
+          properties: { name: "Japan", visited: true },
         },
         {
           type: "Polygon",
@@ -616,15 +605,13 @@ export const mapData: Geography = {
           type: "Polygon",
           arcs: [[441, 442, 443, 444]],
           id: "KHM",
-          properties: { name: "Cambodia" },
-          visited: true,
+          properties: { name: "Cambodia", visited: true },
         },
         {
           type: "Polygon",
           arcs: [[445, 446]],
           id: "KOR",
-          properties: { name: "South Korea" },
-          visited: true,
+          properties: { name: "South Korea", visited: true },
         },
         {
           type: "Polygon",
@@ -642,8 +629,7 @@ export const mapData: Geography = {
           type: "Polygon",
           arcs: [[454, 455, -186, 456, -443]],
           id: "LAO",
-          properties: { name: "Laos" },
-          visited: true,
+          properties: { name: "Laos", visited: true },
         },
         {
           type: "Polygon",
@@ -715,8 +701,7 @@ export const mapData: Geography = {
           type: "Polygon",
           arcs: [[-99, -343, 479, 480, 481]],
           id: "MEX",
-          properties: { name: "Mexico" },
-          visited: true,
+          properties: { name: "Mexico", visited: true },
         },
         {
           type: "Polygon",
@@ -734,15 +719,13 @@ export const mapData: Geography = {
           type: "Polygon",
           arcs: [[487, -75, -384, -187, -456, 488]],
           id: "MMR",
-          properties: { name: "Myanmar" },
-          visited: true,
+          properties: { name: "Myanmar", visited: true },
         },
         {
           type: "Polygon",
           arcs: [[489, -89, 490, -450, -16]],
           id: "MNE",
-          properties: { name: "Montenegro" },
-          visited: true,
+          properties: { name: "Montenegro", visited: true },
         },
         {
           type: "Polygon",
@@ -772,8 +755,7 @@ export const mapData: Geography = {
           type: "MultiPolygon",
           arcs: [[[514, 515, 516, 517]], [[-380, 518, -116, 519]]],
           id: "MYS",
-          properties: { name: "Malaysia" },
-          visited: true,
+          properties: { name: "Malaysia", visited: true },
         },
         {
           type: "Polygon",
@@ -829,8 +811,7 @@ export const mapData: Geography = {
           type: "MultiPolygon",
           arcs: [[[539]], [[540]]],
           id: "NZL",
-          properties: { name: "New Zealand" },
-          visited: true,
+          properties: { name: "New Zealand", visited: true },
         },
         {
           type: "MultiPolygon",
@@ -1056,8 +1037,7 @@ export const mapData: Geography = {
           type: "Polygon",
           arcs: [[663, -518, 664, -489, -455, -442]],
           id: "THA",
-          properties: { name: "Thailand" },
-          visited: true,
+          properties: { name: "Thailand", visited: true },
         },
         {
           type: "Polygon",
@@ -1099,8 +1079,7 @@ export const mapData: Geography = {
           type: "Polygon",
           arcs: [[674]],
           id: "TWN",
-          properties: { name: "Taiwan" },
-          visited: true,
+          properties: { name: "Taiwan", visited: true },
         },
         {
           type: "Polygon",
@@ -1151,8 +1130,7 @@ export const mapData: Geography = {
             [[-144, 702, -142, 703]],
           ],
           id: "USA",
-          properties: { name: "United States" },
-          visited: true,
+          properties: { name: "United States", visited: true },
         },
         {
           type: "Polygon",
@@ -1170,8 +1148,7 @@ export const mapData: Geography = {
           type: "Polygon",
           arcs: [[705, -444, -457, -185]],
           id: "VNM",
-          properties: { name: "Vietnam" },
-          visited: true,
+          properties: { name: "Vietnam", visited: true },
         },
         {
           type: "MultiPolygon",
@@ -1288,8 +1265,7 @@ export const mapData: Geography = {
           type: "Polygon",
           arcs: [[515, 740]],
           id: "SGP",
-          properties: { name: "Singapore" },
-          visited: true,
+          properties: { name: "Singapore", visited: true },
         },
         {
           type: "MultiPolygon",
@@ -1361,8 +1337,7 @@ export const mapData: Geography = {
           type: "Polygon",
           arcs: [[763]],
           id: "MLT",
-          properties: { name: "Malta" },
-          visited: true,
+          properties: { name: "Malta", visited: true },
         },
         {
           type: "Polygon",
