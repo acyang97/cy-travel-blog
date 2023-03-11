@@ -1,5 +1,6 @@
 import { Country } from "@/interfaces/Country.interface";
 import Link from "next/link";
+import Image from "next/image";
 
 const CountryPreview = (props: Country) => {
   const { name, year } = props;
@@ -7,11 +8,15 @@ const CountryPreview = (props: Country) => {
 
   return (
     <div className="w-full overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
-      <img
+      <Image
         className="object-cover w-full h-56"
+        // Don't think the width here matters as it is already decided by tailwind
+        width={800}
+        height={600}
+        // onError: TODO
         src={`/images/CountryPage/${name}.jpeg`}
         // src="https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-        alt="avatar"
+        alt={name}
       />
 
       <div className="py-5 text-center">

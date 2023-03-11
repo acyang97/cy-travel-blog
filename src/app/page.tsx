@@ -24,7 +24,8 @@ const HomePage = () => {
             travelling! I particularly enjoy solo travelling to off the beaten
             path destinations! I find that myself having the best experiences
             when I set off without a proper plan! Aside from travelling, I also
-            enjoy bouldering, photography and football!
+            enjoy bouldering, photography and watching sports! Fun fact: I have
+            many nicknames like Chun, Chunses, Amirul, Julian :)
           </p>
         </div>
       </div>
