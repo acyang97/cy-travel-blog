@@ -40,19 +40,19 @@ const AppNavBar = () => {
               <li>
                 <a
                   className="text-gray-500 transition hover:text-gray-500/75"
-                  href="/"
+                  href="/destinations"
                 >
-                  Countries
+                  Destinations
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   className="text-gray-500 transition hover:text-gray-500/75"
                   href="/"
                 >
                   Contact
                 </a>
-              </li>
+              </li> */}
             </ul>
           </nav>
           {/* <div className="flex items-center gap-4">

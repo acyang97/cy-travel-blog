@@ -30,9 +30,8 @@ const HomePageHeader = () => {
           <h1 className="title-font text-4xl mb-4 font-bold text-gray-900">
             I&#39;ve been to 28 countries.
           </h1>
-          {/* TODO Crrate the destination page */}
           <Link
-            href="/"
+            href="/destinations"
             role="button"
             className="text-white bg-sky-600 hover:bg-sky-700 focus:ring-4 focus:outline-none focus:ring-sky-300 font-medium rounded-lg text-xl px-5 py-2.5 text-center inline-flex items-center"
           >
