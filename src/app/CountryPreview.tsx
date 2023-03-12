@@ -7,7 +7,7 @@ const CountryPreview = (props: Country) => {
   const formattedName = name.replaceAll("-", " ");
 
   return (
-    <div className="w-full overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+    <div className="w-full overflow-hidden rounded-lg shadow-lg bg-sky-800">
       <Image
         className="object-cover w-full h-56"
         // Don't think the width here matters as it is already decided by tailwind
@@ -21,7 +21,7 @@ const CountryPreview = (props: Country) => {
 
       <div className="py-5 text-center">
         <Link
-          href={`/country/${formattedName}`}
+          href={`/destinations/${formattedName}`}
           className="block text-xl font-bold text-gray-800 dark:text-white"
           role="link"
         >

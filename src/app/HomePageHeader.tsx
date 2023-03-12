@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import HomePageHeaderImage from "../../public/images/HomePage/home-page-header.jpg";
 
 const HomePageHeader = () => {
@@ -16,7 +17,6 @@ const HomePageHeader = () => {
           <h1 className="title-font text-6xl mb-4 font-bold text-gray-900">
             Welcome to my Travel Blog!
           </h1>
-          {/* TODO: Update this */}
           <p className="mt-8 mb-2 mx-3 leading-relaxed">
             My name is Chun Yang, a 26 year old Singaporean who loves
             travelling! I particularly enjoy solo travelling to off the beaten
@@ -25,6 +25,11 @@ const HomePageHeader = () => {
             enjoy bouldering, photography and watching sports! Fun fact: I have
             many nicknames like Chun, Chunses, Amirul, Julian :)
           </p>
+        </div>
+        <div className="text-center my-4">
+          <h1 className="title-font text-4xl mb-4 font-bold text-gray-900">
+            I&#39;ve been to 28 countries.
+          </h1>
         </div>
       </div>
     </header>
