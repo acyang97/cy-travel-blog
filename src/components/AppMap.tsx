@@ -18,7 +18,7 @@ const AppMap = () => {
                   stroke="black"
                   strokeWidth={0.1}
                   // true=yellow-500, false=slate-300
-                  fill={geo.properties.visited ? "#eab308" : "#cbd5e1"}
+                  fill={geo.properties?.visited ? "#eab308" : "#cbd5e1"}
                 />
               ))
             }
