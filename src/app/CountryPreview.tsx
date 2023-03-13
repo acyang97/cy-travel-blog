@@ -9,7 +9,7 @@ const CountryPreview = (props: Country) => {
   return (
     <div className="w-full overflow-hidden rounded-lg shadow-lg bg-sky-800">
       <Image
-        className="object-cover w-full h-56"
+        className="object-cover w-full h-56 lg:h-72"
         // Don't think the width here matters as it is already decided by tailwind
         width={800}
         height={600}
