@@ -14,6 +14,7 @@ interface Props {
     countrySlug: string;
   };
 }
+
 export const generateStaticParams = async () => {
   return countriesTravelledTo.map((country) => ({
     countrySlug: country.name,
