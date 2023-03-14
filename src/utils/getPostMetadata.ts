@@ -18,6 +18,7 @@ export const getPostMetadata = (country: string): PostMetadata[] => {
       title: matterResult.data.title,
       date: matterResult.data.date,
       subtitle: matterResult.data.subtitle,
+      etc: matterResult.data.etc,
       slug: fileName.replace(".md", ""),
     };
   });
