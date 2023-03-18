@@ -23,7 +23,7 @@ export const countriesData: Country[] = [
     code: "AL",
     visited: true,
     year: 2022,
-    posts: ["post-1", "post-2", "post-3"],
+    posts: ["5-Reasons-To-Travel-To-Albania", "post-1", "post-2", "post-3"],
     continent: Continent.EUROPE,
   },
   {

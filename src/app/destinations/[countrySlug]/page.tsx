@@ -4,10 +4,11 @@ import {
   checkIfCountryExistHasPost,
 } from "@/utils/country.utils";
 import { getPostMetadata } from "@/utils/getPostMetadata";
-import CountryPostPreview from "./CountryPostPreview";
+import PostPreview from "./PostPreview";
 import { notFound } from "next/navigation";
 import { countriesTravelledTo } from "@/constants/country.constants";
 import ScrollUp from "../../../components/ScrollUp";
+import CountryPageHeader from "./CountryPageHeader";
 
 interface Props {
   params: {
@@ -33,14 +34,15 @@ const CountryPage = (props: Props) => {
 
   const postMetadata = getPostMetadata(countrySlug);
   const postPreviews = postMetadata.map((post) => (
-    <CountryPostPreview key={post.slug} post={post} slug={countrySlug} />
+    <PostPreview key={post.slug} post={post} slug={countrySlug} />
   ));
 
   return (
     <div>
       <ScrollUp />
-      <div className="mx-auto max-w-2xl px-6">
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+      <CountryPageHeader countryName={countrySlug} />
+      <div className="mx-12 md:mx-20 lg:mx-40 my-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 content-center">
           {postPreviews}
         </div>
       </div>

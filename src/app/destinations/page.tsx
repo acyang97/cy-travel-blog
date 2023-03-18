@@ -3,7 +3,7 @@ import { countriesTravelledTo } from "@/constants/country.constants";
 import { Continent } from "@/interfaces/Country.interface";
 import { Tab } from "@headlessui/react";
 import { useState } from "react";
-import CountryPreview from "../CountryPreview";
+import CountryPreview from "./CountryPreview";
 import DestinationsPageHeader from "./DestinationsPageHeader";
 
 const DestinationPage = () => {

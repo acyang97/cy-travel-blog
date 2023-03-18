@@ -19,6 +19,7 @@ export const getPostMetadata = (country: string): PostMetadata[] => {
       date: matterResult.data.date,
       subtitle: matterResult.data.subtitle,
       etc: matterResult.data.etc,
+      previewPhoto: matterResult.data.previewPhoto,
       slug: fileName.replace(".md", ""),
     };
   });
