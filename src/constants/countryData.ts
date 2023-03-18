@@ -25,6 +25,8 @@ export const countriesData: Country[] = [
     year: 2022,
     posts: ["5-Reasons-To-Travel-To-Albania", "post-1", "post-2", "post-3"],
     continent: Continent.EUROPE,
+    introduction:
+      "Albania is a small country in Southeastern Europe with a rich history and stunning natural beauty. Its coastline, mountain ranges, and lakes make it a popular destination for outdoor enthusiasts, while its cities offer historic landmarks, bustling markets, and a vibrant nightlife. Albanian cuisine is a unique blend of Mediterranean and Balkan influences. Albania is a diverse and dynamic country that combines ancient traditions with modern innovations, making it a destination worth exploring.",
   },
   {
     name: "Algeria",
@@ -114,6 +116,8 @@ export const countriesData: Country[] = [
     visited: true,
     posts: [],
     continent: Continent.OCEANIA,
+    introduction:
+      "Australia is a country and continent located in the southern hemisphere, surrounded by the Indian and Pacific Oceans. With a population of over 25 million people, it is the world's sixth-largest country by total area. Australia is known for its stunning landscapes, including the vast Outback, tropical rainforests, and beautiful beaches. The country is home to a rich and diverse wildlife, with many unique species found only in Australia. Its major cities, including Sydney, Melbourne, and Brisbane, are vibrant and cosmopolitan, with a strong arts and culture scene, as well as a reputation for great food and wine.",
   },
   {
     name: "Austria",
@@ -227,6 +231,8 @@ export const countriesData: Country[] = [
     year: 2022,
     posts: [],
     continent: Continent.EUROPE,
+    introduction:
+      "Bosnia is a small country located in the Balkan region of Europe, known for its stunning natural beauty, fascinating history, and warm hospitality. The country offers a unique blend of eastern and western cultures, with influences from the Ottoman Empire and Austro-Hungarian Empire still visible in its architecture and traditions. Bosnia is home to a variety of stunning landscapes, including the rugged peaks of the Dinaric Alps, rolling hills and valleys, and the sparkling waters of the Adriatic Sea. Visitors to Bosnia can explore historic cities like Sarajevo, Mostar, and Banja Luka, sample delicious local cuisine, and experience the warm and welcoming culture of this beautiful country.",
   },
   {
     name: "Botswana",
@@ -252,6 +258,8 @@ export const countriesData: Country[] = [
     year: 2016,
     posts: [],
     continent: Continent.ASIA,
+    introduction:
+      "Brunei is a small country located on the northern coast of the island of Borneo, known for its rich history, beautiful architecture, and stunning natural beauty. The country is ruled by a sultan, and its culture is deeply influenced by Islam. Visitors to Brunei can explore the opulent palaces and mosques, stroll through charming villages and bustling markets, and enjoy the country's lush rainforests, pristine beaches, and crystal-clear waters. Brunei is also home to a variety of unique flora and fauna, including the endangered proboscis monkey. Whether you're interested in history, culture, or nature, Brunei has something to offer every traveler.",
   },
   {
     name: "Bulgaria",
@@ -285,6 +293,8 @@ export const countriesData: Country[] = [
     year: 2019,
     posts: [],
     continent: Continent.ASIA,
+    introduction:
+      "Cambodia is a fascinating country located in Southeast Asia, known for its rich history, stunning architecture, and beautiful landscapes. The country is home to the iconic Angkor Wat temple complex, as well as many other ancient ruins and temples that provide a glimpse into Cambodia's rich cultural heritage. Visitors to Cambodia can also enjoy the country's beautiful beaches, lush jungles, and charming towns and cities. Cambodia's capital city, Phnom Penh, is a bustling metropolis with a vibrant arts and culture scene, while Siem Reap, the gateway to Angkor Wat, offers a more laid-back atmosphere. Whether you're interested in history, culture, or nature, Cambodia has something to offer every traveler.",
   },
   {
     name: "Cameroon",
@@ -350,6 +360,8 @@ export const countriesData: Country[] = [
     year: 2019,
     posts: [],
     continent: Continent.ASIA,
+    introduction:
+      "China is a vast country located in East Asia, known for its rich history, diverse culture, and stunning landscapes. Visitors to China can explore ancient landmarks like the Great Wall, the Forbidden City, and the Terracotta Warriors, as well as modern marvels like the Shanghai Tower and the Bird's Nest Olympic Stadium. The country is also home to a variety of natural wonders, including the Yangtze River, the Himalayan Mountains, and the karst peaks of Guilin. Chinese cuisine is renowned around the world, with each region offering its own unique flavors and specialties. With so much to see and do, China is a destination that's sure to leave a lasting impression on any traveler.",
   },
   {
     name: "Colombia",
@@ -415,6 +427,8 @@ export const countriesData: Country[] = [
     year: 2022,
     posts: [],
     continent: Continent.EUROPE,
+    introduction:
+      "Croatia is a beautiful country located on the eastern coast of the Adriatic Sea, known for its stunning beaches, crystal-clear waters, and historic cities. Visitors to Croatia can explore the charming streets of Dubrovnik, a UNESCO World Heritage Site, as well as the lively capital city of Zagreb and the ancient Roman ruins of Split. The country is also home to a variety of natural wonders, including the Plitvice Lakes National Park, with its cascading waterfalls and turquoise lakes. Croatian cuisine is a delicious blend of Mediterranean and Central European influences, with fresh seafood, grilled meats, and hearty stews all on offer. With its rich history, beautiful landscapes, and warm hospitality, Croatia is a destination that's sure to delight any traveler.",
   },
   {
     name: "Cuba",
@@ -440,6 +454,8 @@ export const countriesData: Country[] = [
     year: 2022,
     posts: [],
     continent: Continent.EUROPE,
+    introduction:
+      "The Czech Republic is a beautiful country located in the heart of Europe, known for its stunning architecture, rich history, and vibrant culture. Visitors to the Czech Republic can explore the historic streets of Prague, a city famous for its Gothic spires, Baroque churches, and charming cafes. The country is also home to a variety of ancient castles, including the stunning Karlštejn Castle, as well as natural wonders like the Bohemian Switzerland National Park, with its towering sandstone formations and stunning views. Czech cuisine is hearty and delicious, with traditional dishes like goulash, dumplings, and roasted meats all on offer. With its rich history, stunning landscapes, and warm hospitality, the Czech Republic is a destination that's sure to leave a lasting impression on any traveler.",
   },
   {
     name: "Denmark",
@@ -609,6 +625,8 @@ export const countriesData: Country[] = [
     year: 2022,
     posts: [],
     continent: Continent.EUROPE,
+    introduction:
+      "Germany is a fascinating country located in the heart of Europe, known for its rich history, stunning architecture, and vibrant culture. Visitors to Germany can explore the historic streets of Berlin, a city famous for its landmarks like the Brandenburg Gate and Checkpoint Charlie, as well as its vibrant arts and nightlife scene. The country is also home to a variety of ancient castles, including the stunning Neuschwanstein Castle, as well as natural wonders like the Black Forest and the Bavarian Alps. German cuisine is hearty and delicious, with traditional dishes like sausages, pretzels, and beer all on offer. With its rich history, stunning landscapes, and warm hospitality, Germany is a destination that's sure to delight any traveler.",
   },
   {
     name: "Ghana",
@@ -730,6 +748,8 @@ export const countriesData: Country[] = [
     year: 2022,
     posts: [],
     continent: Continent.EUROPE,
+    introduction:
+      "Hungary is a beautiful country located in central Europe, known for its stunning architecture, rich history, and vibrant culture. Visitors to Hungary can explore the charming streets of Budapest, a city famous for its thermal baths, historic landmarks, and delicious cuisine. The country is also home to a variety of ancient castles, including the stunning Buda Castle, as well as natural wonders like the Lake Balaton and the Danube Bend. Hungarian cuisine is hearty and delicious, with traditional dishes like goulash, chimney cake, and wine all on offer. With its rich history, stunning landscapes, and warm hospitality, Hungary is a destination that's sure to leave a lasting impression on any traveler.",
   },
   {
     name: "Iceland",
@@ -755,6 +775,8 @@ export const countriesData: Country[] = [
     year: 2022,
     posts: [],
     continent: Continent.ASIA,
+    introduction:
+      "Indonesia is a diverse and fascinating country located in Southeast Asia, known for its beautiful beaches, tropical landscapes, and unique culture. Visitors to Indonesia can explore the bustling capital city of Jakarta, or the historic city of Yogyakarta, home to the famous Borobudur temple. The country is also home to a variety of natural wonders, including the stunning rice terraces of Bali, the beautiful beaches of Lombok and Gili Islands, and the breathtaking volcanoes of Java. Indonesian cuisine is delicious and varied, with traditional dishes like nasi goreng, sate, and rendang all on offer. With its rich culture, stunning landscapes, and warm hospitality, Indonesia is a destination that's sure to enchant any traveler.",
   },
   {
     name: "Iran",
@@ -796,6 +818,8 @@ export const countriesData: Country[] = [
     year: 2013,
     posts: [],
     continent: Continent.EUROPE,
+    introduction:
+      "Italy is a beautiful country located in southern Europe, known for its stunning architecture, rich history, and delicious cuisine. Visitors to Italy can explore the ancient ruins of Rome, the charming streets of Florence, and the romantic canals of Venice. The country is also home to a variety of natural wonders, including the breathtaking Amalfi Coast and the stunning Dolomite Mountains. Italian cuisine is world-renowned, with traditional dishes like pizza, pasta, and gelato all on offer. With its rich history, stunning landscapes, and warm hospitality, Italy is a destination that's sure to delight any traveler.",
   },
   {
     name: "Jamaica",
@@ -813,6 +837,8 @@ export const countriesData: Country[] = [
     year: 2019,
     posts: [],
     continent: Continent.ASIA,
+    introduction:
+      "Japan is a fascinating country located in East Asia, known for its unique culture, stunning scenery, and delicious cuisine. Visitors to Japan can explore the bright lights of Tokyo, the historic streets of Kyoto, and the serene gardens of Hiroshima. The country is also home to a variety of natural wonders, including Mount Fuji and the cherry blossom trees that bloom in the spring. Japanese cuisine is diverse and delicious, with traditional dishes like sushi, ramen, and tempura all on offer. With its rich history, stunning landscapes, and warm hospitality, Japan is a destination that's sure to leave a lasting impression on any traveler.",
   },
   {
     name: "Jordan",
@@ -822,6 +848,8 @@ export const countriesData: Country[] = [
     year: 2022,
     posts: [],
     continent: Continent.ASIA,
+    introduction:
+      "Jordan is a beautiful country located in the heart of the Middle East, known for its ancient history, stunning landscapes, and warm hospitality. Visitors to Jordan can explore the historic city of Petra, one of the New Seven Wonders of the World, or float in the salty waters of the Dead Sea. The country is also home to a variety of natural wonders, including the stunning Wadi Rum desert and the breathtaking views from Mount Nebo. Jordanian cuisine is delicious and varied, with traditional dishes like mansaf, falafel, and hummus all on offer. With its rich history, stunning landscapes, and warm hospitality, Jordan is a destination that's sure to enchant any traveler.",
   },
   {
     name: "Kazakhstan",
@@ -863,6 +891,8 @@ export const countriesData: Country[] = [
     year: 2019,
     posts: [],
     continent: Continent.ASIA,
+    introduction:
+      "South Korea is a beautiful country located in East Asia, known for its rich culture, modern cities, and delicious cuisine. Visitors to South Korea can explore the bustling streets of Seoul, the historic sites of Gyeongju, and the beautiful beaches of Jeju Island. The country is also home to a variety of natural wonders, including the stunning Seoraksan National Park and the beautiful Nami Island. Korean cuisine is delicious and diverse, with traditional dishes like kimchi, bibimbap, and bulgogi all on offer. With its rich culture, stunning landscapes, and warm hospitality, South Korea is a destination that's sure to leave a lasting impression on any traveler.",
   },
   {
     name: "Kuwait",
@@ -888,6 +918,8 @@ export const countriesData: Country[] = [
     year: 2019,
     posts: [],
     continent: Continent.ASIA,
+    introduction:
+      "Laos is a beautiful country located in Southeast Asia, known for its stunning natural scenery, rich culture, and laid-back lifestyle. Visitors to Laos can explore the historic streets of Luang Prabang, cruise down the Mekong River, and hike in the lush jungles of the Bolaven Plateau. The country is also home to a variety of natural wonders, including the stunning Kuang Si Waterfall and the serene Mekong Delta. Laotian cuisine is delicious and unique, with traditional dishes like laap, sticky rice, and papaya salad all on offer. With its stunning landscapes, rich culture, and warm hospitality, Laos is a destination that's sure to enchant any traveler.",
   },
   {
     name: "Latvia",
@@ -993,6 +1025,8 @@ export const countriesData: Country[] = [
     year: 2022,
     posts: [],
     continent: Continent.ASIA,
+    introduction:
+      "Malaysia is a beautiful country located in Southeast Asia, known for its diverse culture, stunning natural scenery, and delicious cuisine. Visitors to Malaysia can explore the vibrant streets of Kuala Lumpur, the historic city of Malacca, and the beautiful beaches of Langkawi Island. The country is also home to a variety of natural wonders, including the stunning Taman Negara National Park and the breathtaking Cameron Highlands. Malaysian cuisine is delicious and diverse, with traditional dishes like nasi lemak, satay, and laksa all on offer. With its diverse culture, stunning landscapes, and warm hospitality, Malaysia is a destination that's sure to leave a lasting impression on any traveler.",
   },
   {
     name: "Maldives",
@@ -1018,6 +1052,8 @@ export const countriesData: Country[] = [
     year: 2022,
     posts: [],
     continent: Continent.EUROPE,
+    introduction:
+      "Malta is a beautiful island nation located in the Mediterranean Sea, known for its rich history, stunning natural scenery, and warm hospitality. Visitors to Malta can explore the historic streets of Valletta, the ancient temples of Hagar Qim, and the beautiful beaches of Comino Island. The country is also home to a variety of natural wonders, including the stunning Blue Lagoon and the breathtaking Dingli Cliffs. Maltese cuisine is delicious and unique, with traditional dishes like pastizzi, rabbit stew, and fresh seafood all on offer. With its rich history, stunning landscapes, and warm hospitality, Malta is a destination that's sure to enchant any traveler.",
   },
   {
     name: "Marshall Islands",
@@ -1059,6 +1095,8 @@ export const countriesData: Country[] = [
     year: 2022,
     posts: [],
     continent: Continent.NORTH_AMERICA,
+    introduction:
+      "Mexico is a beautiful country located in North America, known for its vibrant culture, stunning natural scenery, and delicious cuisine. Visitors to Mexico can explore the historic streets of Mexico City, the ancient ruins of Chichen Itza, and the beautiful beaches of Cancun. The country is also home to a variety of natural wonders, including the stunning Copper Canyon and the breathtaking cenotes of the Yucatan Peninsula. Mexican cuisine is delicious and varied, with traditional dishes like tacos, enchiladas, and guacamole all on offer. With its vibrant culture, stunning landscapes, and warm hospitality, Mexico is a destination that's sure to leave a lasting impression on any traveler.",
   },
   {
     name: "Micronesia",
@@ -1100,6 +1138,8 @@ export const countriesData: Country[] = [
     year: 2022,
     posts: [],
     continent: Continent.EUROPE,
+    introduction:
+      "Montenegro is a beautiful country located in Southeastern Europe, known for its stunning natural scenery, rich history, and warm hospitality. Visitors to Montenegro can explore the historic streets of Kotor, the beautiful beaches of Budva, and the breathtaking Durmitor National Park. The country is also home to a variety of natural wonders, including the stunning Bay of Kotor and the breathtaking Tara River Canyon. Montenegrin cuisine is delicious and unique, with traditional dishes like cicvara, priganice, and fresh seafood all on offer. With its stunning landscapes, rich history, and warm hospitality, Montenegro is a destination that's sure to enchant any traveler.",
   },
   {
     name: "Morocco",
@@ -1125,6 +1165,8 @@ export const countriesData: Country[] = [
     year: 2019,
     posts: [],
     continent: Continent.ASIA,
+    introduction:
+      "Myanmar, also known as Burma, is a beautiful country located in Southeast Asia, known for its rich culture, stunning natural scenery, and warm hospitality. Visitors to Myanmar can explore the ancient temples of Bagan, the vibrant streets of Yangon, and the beautiful beaches of Ngapali. The country is also home to a variety of natural wonders, including the stunning Inle Lake and the breathtaking Golden Rock. Burmese cuisine is delicious and varied, with traditional dishes like mohinga, tea leaf salad, and Shan-style tofu noodles all on offer. With its rich culture, stunning landscapes, and warm hospitality, Myanmar is a destination that's sure to leave a lasting impression on any traveler.",
   },
   {
     name: "Namibia",
@@ -1175,6 +1217,8 @@ export const countriesData: Country[] = [
     year: 2017,
     posts: [],
     continent: Continent.OCEANIA,
+    introduction:
+      "New Zealand is a beautiful island nation located in the South Pacific, known for its stunning natural scenery, adventurous spirit, and warm hospitality. Visitors to New Zealand can explore the majestic fjords of Milford Sound, the breathtaking mountains of Queenstown, and the stunning beaches of the Bay of Islands. The country is also home to a variety of natural wonders, including the stunning Tongariro National Park and the breathtaking Franz Josef Glacier. New Zealand cuisine is delicious and varied, with traditional dishes like meat pies, fish and chips, and pavlova all on offer. With its stunning landscapes, adventurous spirit, and warm hospitality, New Zealand is a destination that's sure to enchant any traveler.",
   },
   {
     name: "Nicaragua",
@@ -1464,6 +1508,8 @@ export const countriesData: Country[] = [
     year: 2023,
     posts: [],
     continent: Continent.ASIA,
+    introduction:
+      "Singapore is a vibrant city-state located in Southeast Asia, known for its modern skyline, diverse culture, and delicious cuisine. Visitors to Singapore can explore the vibrant neighborhoods of Chinatown, Little India, and Arab Street, as well as the stunning Gardens by the Bay and Marina Bay Sands. The country is also home to a variety of cultural and historical attractions, including the iconic Merlion statue and the beautiful Buddhist temple of Thian Hock Keng. Singaporean cuisine is delicious and varied, with traditional dishes like laksa, chili crab, and Hainanese chicken rice all on offer. With its modern skyline, rich culture, and delicious cuisine, Singapore is a destination that's sure to delight any traveler.",
   },
   {
     name: "Slovakia",
@@ -1577,6 +1623,8 @@ export const countriesData: Country[] = [
     year: 2022,
     posts: ["post-1", "post-2", "post-3", "post-4", "post-5"],
     continent: Continent.EUROPE,
+    introduction:
+      "Switzerland is a beautiful country located in Central Europe, known for its stunning Alpine scenery, rich culture, and world-class skiing. Visitors to Switzerland can explore the charming cities of Zurich and Geneva, as well as the breathtaking mountain landscapes of the Swiss Alps. The country is also home to a variety of cultural and historical attractions, including the iconic Matterhorn mountain and the stunning Rhine Falls. Swiss cuisine is delicious and varied, with traditional dishes like fondue, raclette, and rosti all on offer. With its stunning landscapes, rich culture, and delicious cuisine, Switzerland is a destination that's sure to enchant any traveler.",
   },
   {
     name: "Syria",
@@ -1594,6 +1642,8 @@ export const countriesData: Country[] = [
     year: 2018,
     posts: [],
     continent: Continent.ASIA,
+    introduction:
+      "Taiwan is a beautiful island nation located in East Asia, known for its vibrant culture, stunning natural scenery, and delicious cuisine. Visitors to Taiwan can explore the vibrant streets of Taipei, the beautiful Sun Moon Lake, and the breathtaking Taroko Gorge. The country is also home to a variety of cultural and historical attractions, including the iconic Taipei 101 skyscraper and the beautiful Chiang Kai-shek Memorial Hall. Taiwanese cuisine is delicious and varied, with traditional dishes like beef noodle soup, stinky tofu, and bubble tea all on offer. With its vibrant culture, stunning landscapes, and delicious cuisine, Taiwan is a destination that's sure to leave a lasting impression on any traveler.",
   },
   {
     name: "Tajikistan",
@@ -1619,6 +1669,8 @@ export const countriesData: Country[] = [
     year: 2022,
     posts: [],
     continent: Continent.ASIA,
+    introduction:
+      "Thailand is a vibrant country located in Southeast Asia, known for its beautiful beaches, ancient temples, and delicious cuisine. Visitors to Thailand can explore the bustling capital city of Bangkok, as well as the stunning islands of Phuket and Koh Samui. The country is also home to a variety of cultural and historical attractions, including the iconic Wat Phra Kaew temple and the beautiful Grand Palace. Thai cuisine is delicious and varied, with traditional dishes like pad Thai, green curry, and tom yum soup all on offer. With its beautiful beaches, rich culture, and delicious cuisine, Thailand is a destination that's sure to enchant any traveler.",
   },
   {
     name: "Timor-Leste",
@@ -1724,6 +1776,8 @@ export const countriesData: Country[] = [
     year: 2022,
     posts: [],
     continent: Continent.NORTH_AMERICA,
+    introduction:
+      "The United States of America is a vast and diverse country, known for its iconic landmarks, beautiful national parks, and diverse culture. Visitors to the USA can explore the bustling cities of New York, Los Angeles, and Chicago, as well as the breathtaking landscapes of Yellowstone National Park and the Grand Canyon. The country is also home to a variety of cultural and historical attractions, including the iconic Statue of Liberty and the beautiful White House. American cuisine is delicious and varied, with traditional dishes like burgers, hot dogs, and apple pie all on offer. With its diverse culture, stunning landscapes, and delicious cuisine, the USA is a destination that's sure to inspire any traveler.",
   },
   {
     name: "Uruguay",
@@ -1765,6 +1819,8 @@ export const countriesData: Country[] = [
     year: 2020,
     posts: [],
     continent: Continent.ASIA,
+    introduction:
+      "Vietnam is a beautiful country located in Southeast Asia, known for its stunning natural scenery, rich culture, and delicious cuisine. Visitors to Vietnam can explore the bustling city of Ho Chi Minh, as well as the stunning landscapes of Halong Bay and the Mekong Delta. The country is also home to a variety of cultural and historical attractions, including the iconic Hoan Kiem Lake and the beautiful Hue Citadel. Vietnamese cuisine is delicious and varied, with traditional dishes like pho, banh mi, and fresh spring rolls all on offer. With its stunning landscapes, rich culture, and delicious cuisine, Vietnam is a destination that's sure to captivate any traveler.",
   },
   {
     name: "Yemen",

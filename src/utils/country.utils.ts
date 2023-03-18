@@ -1,4 +1,5 @@
 import { countriesTravelledTo } from "@/constants/country.constants";
+import { Country } from "@/interfaces/Country.interface";
 import _ from "lodash";
 
 export const checkIfCountryExist = (countryName: string): Boolean => {
@@ -27,4 +28,8 @@ export const checkIfPostExistByCountry = (
     countryNameExist,
     postNameExist,
   };
+};
+
+export const getCountry = (countryName: string): Country | undefined => {
+  return _.find(countriesTravelledTo, { name: countryName });
 };

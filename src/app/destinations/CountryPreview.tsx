@@ -7,7 +7,7 @@ const CountryPreview = (props: Country) => {
   const formattedName = name.replaceAll("-", " ");
 
   return (
-    <div className="w-full overflow-hidden rounded-lg shadow-lg bg-sky-800">
+    <div className="w-full overflow-hidden rounded-lg shadow-lg bg-sky-700">
       <Image
         className="object-cover w-full h-56 lg:h-72"
         // Don't think the width here matters as it is already decided by tailwind

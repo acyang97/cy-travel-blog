@@ -5,7 +5,8 @@ export interface Country {
   dialCode: string;
   visited: boolean;
   code?: string;
-  continent: string;
+  continent: Continent;
+  introduction?: string;
 }
 
 export enum Continent {
