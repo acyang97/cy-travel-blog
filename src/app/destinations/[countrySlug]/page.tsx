@@ -1,9 +1,5 @@
 "use cient";
-import {
-  checkIfCountryExist,
-  checkIfCountryExistHasPost,
-  getCountry,
-} from "@/utils/country.utils";
+import { checkIfCountryExistHasPost, getCountry } from "@/utils/country.utils";
 import { getPostMetadata } from "@/utils/getPostMetadata";
 import PostPreview from "./PostPreview";
 import { notFound } from "next/navigation";
