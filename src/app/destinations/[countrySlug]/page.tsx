@@ -7,6 +7,7 @@ import { countriesTravelledTo } from "@/constants/country.constants";
 import ScrollUp from "../../../components/ScrollUp";
 import CountryPageHeader from "./CountryPageHeader";
 import { PostMetadata } from "@/interfaces/PostMetadata";
+import NoPostsYet from "./NoPostsYet";
 
 interface Props {
   params: {
@@ -44,10 +45,12 @@ const CountryPage = (props: Props) => {
         introduction={introduction}
       />
       <div className="mx-12 md:mx-20 lg:mx-40 my-12">
-        {checkIfCountryExistHasPost(countrySlug) && (
+        {checkIfCountryExistHasPost(countrySlug) ? (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 content-center">
             {postPreviews}
           </div>
+        ) : (
+          <NoPostsYet countryName={countrySlug} />
         )}
       </div>
     </div>
