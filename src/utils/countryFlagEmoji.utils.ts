@@ -1,3 +1,4 @@
+// https://stackoverflow.com/questions/42234666/get-emoji-flag-by-country-code
 export const getFlagEmoji = (code: string) => {
   if (code == "AD") return "🇦🇩";
   if (code == "AE") return "🇦🇪";
