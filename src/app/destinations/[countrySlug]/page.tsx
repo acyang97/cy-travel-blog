@@ -36,6 +36,7 @@ const CountryPage = (props: Props) => {
   }
 
   const introduction = getCountry(countrySlug)?.introduction;
+  const countryCode = getCountry(countrySlug)?.code;
 
   return (
     <div>
@@ -43,6 +44,7 @@ const CountryPage = (props: Props) => {
       <CountryPageHeader
         countryName={countrySlug}
         introduction={introduction}
+        countryCode={countryCode}
       />
       <div className="mx-12 md:mx-20 lg:mx-40 my-12">
         {checkIfCountryExistHasPost(countrySlug) ? (
