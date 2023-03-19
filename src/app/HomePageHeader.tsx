@@ -33,9 +33,9 @@ const HomePageHeader = () => {
           <Link
             href="/destinations"
             role="button"
-            className="text-white bg-sky-600 hover:bg-sky-700 focus:ring-4 focus:outline-none focus:ring-sky-300 font-medium rounded-lg text-xl px-5 py-2.5 text-center inline-flex items-center"
+            className="text-white bg-sky-600 hover:bg-sky-700 focus:ring-4 focus:outline-none focus:ring-sky-300 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center"
           >
-            Check Them Out
+            Check Destinations
             <svg
               aria-hidden="true"
               className="w-5 h-5 ml-2 -mr-1"

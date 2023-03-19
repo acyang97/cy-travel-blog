@@ -1,4 +1,5 @@
 import ScrollUp from "@/components/ScrollUp";
+import Link from "next/link";
 
 // TODO: Configure this page so user can go back to the list of countries
 const CountryNotFound = () => {
@@ -18,13 +19,13 @@ const CountryNotFound = () => {
               But dont worry, you can find plenty of other things on our
               homepage.
             </p>
-            <a
+            <Link
               rel="noopener noreferrer"
-              href="#"
-              className="px-8 py-3 font-semibold rounded bg-sky-600 text-white"
+              href="/"
+              className="text-white bg-sky-600 hover:bg-sky-700 focus:ring-4 focus:outline-none focus:ring-sky-300 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center"
             >
-              Back to Home Page
-            </a>
+              Back To Destinations
+            </Link>
           </div>
         </div>
       </section>

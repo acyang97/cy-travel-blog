@@ -1,5 +1,6 @@
 import AppFooter from "@/app/AppFooter";
 import AppNavBar from "@/app/AppNavBar";
+import Link from "next/link";
 import "../../styles/global.css";
 
 const Custom404 = () => {
@@ -23,13 +24,13 @@ const Custom404 = () => {
                       But dont worry, you can find plenty of other things on our
                       homepage.
                     </p>
-                    <a
+                    <Link
                       rel="noopener noreferrer"
                       href="/"
-                      className="px-8 py-3 font-semibold rounded bg-sky-600 text-white"
+                      className="text-white bg-sky-600 hover:bg-sky-700 focus:ring-4 focus:outline-none focus:ring-sky-300 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center"
                     >
-                      Back to Home Page
-                    </a>
+                      Back To Home
+                    </Link>
                   </div>
                 </div>
               </section>

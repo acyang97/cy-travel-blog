@@ -23,7 +23,7 @@ const NoPostsYet = (props: Props) => {
           <Link
             rel="noopener noreferrer"
             href="/destinations"
-            className="px-8 py-3 font-semibold rounded bg-sky-600 text-white"
+            className="text-white bg-sky-600 hover:bg-sky-700 focus:ring-4 focus:outline-none focus:ring-sky-300 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center"
           >
             Back To Destinations
           </Link>
