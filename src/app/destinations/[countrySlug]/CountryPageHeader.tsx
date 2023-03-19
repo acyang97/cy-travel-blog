@@ -21,7 +21,7 @@ const CountryPageHeader = (props: Props) => {
     <header className="text-gray-600 body-font">
       <div className="container mx-auto flex my-6 items-center justify-center flex-col">
         <div className="text-center lg:w-2/3 w-full">
-          <h1 className="title-font text-4xl md:text-6xl mb-4 font-bold text-gray-900 tracking-widest">
+          <h1 className="title-font text-4xl md:text-5xl mb-4 font-bold text-gray-900 tracking-widest">
             {headerString}
           </h1>
           {introduction && (

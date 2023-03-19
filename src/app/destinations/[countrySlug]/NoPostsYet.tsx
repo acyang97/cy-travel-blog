@@ -25,7 +25,7 @@ const NoPostsYet = (props: Props) => {
             href="/destinations"
             className="px-8 py-3 font-semibold rounded bg-sky-600 text-white"
           >
-            Destinations
+            Back To Destinations
           </Link>
         </div>
       </div>
