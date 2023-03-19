@@ -29,7 +29,7 @@ const getPostContent = (
   return matterResult;
 };
 
-export const generateStaticParams = async () => {
+export const generateStaticParams = async (): Promise<PostPageSlugs[]> => {
   let paths: PostPageSlugs[] = [];
   countriesTravelledTo.forEach((country) => {
     country.posts.forEach((postSlug) => {

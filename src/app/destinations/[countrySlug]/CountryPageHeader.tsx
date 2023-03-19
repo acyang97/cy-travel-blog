@@ -14,7 +14,9 @@ const CountryPageHeader = (props: Props) => {
   if (countryCode) {
     emoji = getFlagEmoji(countryCode);
   }
-  const headerString = emoji ? countryName + emoji : countryName;
+  const formattedName = countryName.replaceAll("-", " ");
+  const headerString = emoji ? formattedName + emoji : formattedName;
+
   return (
     <header className="text-gray-600 body-font">
       <div className="container mx-auto flex my-6 items-center justify-center flex-col">

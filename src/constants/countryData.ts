@@ -10,7 +10,7 @@ export const countriesData: Country[] = [
     continent: Continent.ASIA,
   },
   {
-    name: "Aland Islands",
+    name: "Aland-Islands",
     dialCode: "+358",
     code: "AX",
     visited: false,
@@ -37,7 +37,7 @@ export const countriesData: Country[] = [
     continent: Continent.AFRICA,
   },
   {
-    name: "American Samoa",
+    name: "Samoa",
     dialCode: "+1684",
     code: "AS",
     visited: false,
@@ -876,7 +876,7 @@ export const countriesData: Country[] = [
     continent: Continent.OCEANIA,
   },
   {
-    name: "North Korea",
+    name: "North-Korea",
     dialCode: "+850",
     code: "KP",
     visited: false,

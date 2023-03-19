@@ -15,7 +15,11 @@ interface Props {
   };
 }
 
-export const generateStaticParams = async () => {
+export const generateStaticParams = async (): Promise<
+  {
+    countrySlug: string;
+  }[]
+> => {
   return countriesTravelledTo.map((country) => ({
     countrySlug: country.name,
   }));
@@ -25,6 +29,7 @@ const CountryPage = (props: Props) => {
   const { countrySlug } = props.params;
 
   if (!getCountry(countrySlug)) {
+    console.log("countrySlug", countrySlug);
     notFound();
   }
   let postPreviews;
