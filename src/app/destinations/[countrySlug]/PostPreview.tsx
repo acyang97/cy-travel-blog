@@ -9,7 +9,7 @@ interface Props {
 
 const PostPreview = (props: Props) => {
   const { post, slug } = props;
-  const { previewPhoto, title, subtitle, date } = post;
+  const { previewPhoto, title, subtitle } = post;
   return (
     // <div className="w-full overflow-hidden rounded-lg shadow-lg bg-sky-800">
     <div className="w-11/12 mx-auto bg-sky-700 border border-gray-200 rounded-lg shadow">

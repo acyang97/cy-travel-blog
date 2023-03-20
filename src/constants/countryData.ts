@@ -23,7 +23,10 @@ export const countriesData: Country[] = [
     code: "AL",
     visited: true,
     year: 2022,
-    posts: ["5-Reasons-To-Travel-To-Albania", "post-1", "post-2", "post-3"],
+    posts: [
+      "3-Reasons-To-Travel-To-Albania",
+      "Roaming-Through-Europe:-My-Solo-Backpacking-Adventure",
+    ],
     continent: Continent.EUROPE,
     introduction:
       "Albania is a small country in Southeastern Europe with a rich history and stunning natural beauty. Its coastline, mountain ranges, and lakes make it a popular destination for outdoor enthusiasts, while its cities offer historic landmarks, bustling markets, and a vibrant nightlife. Albanian cuisine is a unique blend of Mediterranean and Balkan influences. Albania is a diverse and dynamic country that combines ancient traditions with modern innovations, making it a destination worth exploring.",
@@ -1621,7 +1624,7 @@ export const countriesData: Country[] = [
     code: "CH",
     visited: true,
     year: 2022,
-    posts: ["post-1", "post-2", "post-3", "post-4", "post-5"],
+    posts: ["post-1", "post-2", "post-3", "post-5"],
     continent: Continent.EUROPE,
     introduction:
       "Switzerland is a beautiful country located in Central Europe, known for its stunning Alpine scenery, rich culture, and world-class skiing. Visitors to Switzerland can explore the charming cities of Zurich and Geneva, as well as the breathtaking mountain landscapes of the Swiss Alps. The country is also home to a variety of cultural and historical attractions, including the iconic Matterhorn mountain and the stunning Rhine Falls. Swiss cuisine is delicious and varied, with traditional dishes like fondue, raclette, and rosti all on offer. With its stunning landscapes, rich culture, and delicious cuisine, Switzerland is a destination that's sure to enchant any traveler.",

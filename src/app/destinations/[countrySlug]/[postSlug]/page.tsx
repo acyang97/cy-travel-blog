@@ -66,7 +66,10 @@ const PostPage = (props: Props) => {
         <h3 className="pt-6 text-center text-slate-500">
           Written on {post.data.date}
         </h3>
-        <div className="mt-10 md:mt-20">
+        <h3 className="pt-2 text-center text-slate-500">
+          {post.data.time} mins read
+        </h3>
+        <div className="mt-8 md:mt-16">
           {/* On prose and configs if want to customize it in future: https://tailwindcss.com/docs/typography-plugin */}
           <div className="mx-2 md:mx-1">
             <article className="prose lg:prose-xl">

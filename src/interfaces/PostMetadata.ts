@@ -5,4 +5,5 @@ export interface PostMetadata {
   slug: string;
   etc?: string;
   previewPhoto?: string;
+  time?: string;
 }

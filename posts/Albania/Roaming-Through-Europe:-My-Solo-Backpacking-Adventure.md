@@ -1,8 +1,7 @@
 ---
-title: "5 Reasons To Travel To Albania"
-subtitle: "The country where your friends don't know about"
+title: "Roaming Through Europe: My Solo Backpacking Adventure"
+subtitle: "The grad trip that I will never forget"
 date: "2023-03-17"
-previewPhoto: "/images/jelpi_demo.gif"
 ---
 
 Albania was never on my bucket list and I barely knew anything about the country. I just happened to watched a <a href="https://www.youtube.com/watch?v=q_BCdZUxRI8" target="_blank">video from Yes Theory</a> about Albania. As someone who enjoys travelling to less ordinary places where people I know have never really heard of, Albania piqued my interest after watching that video. Many people I met along the way were surprised Albania is only the 2nd European country that I visited so far back then. This might be unconventional, but I always feel that people should visit countires where many tourists don't know yet. Travelling to a country with little tourists feels like you have the entire place to yourself and it is so peaceful.

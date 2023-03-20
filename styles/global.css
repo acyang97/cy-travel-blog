@@ -3,3 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.image-caption {
+  text-align: center;
+  font-size: 0.8rem;
+  color: lightgrey;
+}
