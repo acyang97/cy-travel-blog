@@ -56,11 +56,21 @@ const PostPage = (props: Props) => {
   return (
     <div>
       <ScrollUp />
-      <div className="mx-auto  max-w-2xl px-6">
-        <h1 className="text-2xl text-violet-600">{post.data.title}</h1>
-        <article className="prose lg:prose-xl">
-          <Markdown>{post.content}</Markdown>
-        </article>
+      <div className="mx-auto max-w-4xl px-6">
+        <h1 className="text-4xl md:text-5xl text-slate-900 mt-8 text-center">
+          {post.data.title}
+        </h1>
+        <h3 className="pt-6 text-center text-slate-500">
+          Written on {post.data.date}
+        </h3>
+        <div className="mt-10 md:mt-20">
+          {/* On prose and configs if want to customize it in future: https://tailwindcss.com/docs/typography-plugin */}
+          <div className="mx-2 md:mx-1">
+            <article className="prose lg:prose-xl">
+              <Markdown>{post.content}</Markdown>
+            </article>
+          </div>
+        </div>
       </div>
     </div>
   );

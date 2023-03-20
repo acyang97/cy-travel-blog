@@ -8,6 +8,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: "100ch", // add required value here
+            p: {
+              "text-align": "justify",
+            },
+          },
+        },
+      },
       colors: {
         primary: {
           100: "#2F3C7E",
