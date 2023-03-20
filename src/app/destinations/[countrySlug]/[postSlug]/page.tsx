@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { checkIfPostExistByCountry } from "@/utils/country.utils";
 import { countriesTravelledTo } from "@/constants/country.constants";
 import ScrollUp from "@/components/ScrollUp";
+import BackToCountryButton from "@/components/BackToCountryButton";
 
 interface PostPageSlugs {
   countrySlug: string;
@@ -53,10 +54,12 @@ const PostPage = (props: Props) => {
     notFound();
   }
   const post = getPostContent(countrySlug, postSlug);
+
   return (
     <div>
       <ScrollUp />
       <div className="mx-auto max-w-4xl px-6">
+        <BackToCountryButton countrySlug={countrySlug} text="Back to " />
         <h1 className="text-4xl md:text-5xl text-slate-900 mt-8 text-center">
           {post.data.title}
         </h1>
@@ -71,6 +74,10 @@ const PostPage = (props: Props) => {
             </article>
           </div>
         </div>
+        <BackToCountryButton
+          countrySlug={countrySlug}
+          text="View more posts on "
+        />
       </div>
     </div>
   );
