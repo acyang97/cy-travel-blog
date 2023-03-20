@@ -37,3 +37,17 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## How to write a post
+
+1. Create the markdown file in the `Post` folder, inside the `Country` folder where the post of the country belongs to. Create the `Country` folder if necessary
+2. Add the title of post in the `countryData.ts` file. The title of the post should be the name of the `.md` file. For example, if there is a post written in a `md` file titled `3-Reasons-To-Travel-To-Albania.md`, should add `3-Reasons-To-Travel-To-Albania` into the array of the `posts` property in the respective country
+3. Ensure that the `md` file contains all the required metadata of `title`, `subtitle`, `date`, `previewPhoto`, `time`
+4. The template for adding a photo is below. Replace the
+
+```
+<figure style="text-align:center">
+  <center><img src="https://imagedelivery.net/zHaoQUqTgVRyao5aPR7rcg/<imageId>/<variant>" alt="<INSERT ALT TEXT>" style="width:100%;margin:0" align="center"></center>
+  <figcaption align="center" style="font-weight:200;color:black"><b>INSERT SUBTITLE</b></figcaption>
+</figure>
+```
