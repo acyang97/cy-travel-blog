@@ -19,3 +19,19 @@ export enum Continent {
   OCEANIA = "Oceania",
   EUROPE = "Europe",
 }
+
+export interface CountryPreviewPhotos {
+  name: string;
+  previewPhotos: PreviewPhoto[];
+}
+
+export enum PhotoType {
+  LANDSCAPE = "Landscape",
+  PORTRAIT = "Portrait",
+}
+
+export interface PreviewPhoto {
+  photoType: PhotoType;
+  photoUrl: string;
+  photoCaption: string;
+}
