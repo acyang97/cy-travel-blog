@@ -1,9 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
-import { UsaPreviewPhotos } from "@/constants/countryPreviewPhotosData";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper";
 
@@ -68,7 +66,7 @@ const CountryPhotosCarousel = (props: Props) => {
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
         autoplay={{
-          delay: 4000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         pagination={{
