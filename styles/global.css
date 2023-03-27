@@ -23,20 +23,10 @@
 }
 
 .swiper-nav-btns button {
-  width: 60px;
-  height: 50px;
-  border-radius: 50px;
-  border: none;
+  width: 30px;
+  height: 20px;
   outline: none;
-  background-color: hsl(210, 100%, 50%);
-  color: #fff;
+  color: #a3a3a3;
   margin: 0px 0.5rem;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   margin-top: 30px;
-  transition: all 0.5s;
-}
-
-.swiper-nav-btns button:hover {
-  background-color: hsl(210, 100%, 40%);
-  cursor: pointer;
 }
