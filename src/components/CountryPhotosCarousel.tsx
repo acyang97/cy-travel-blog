@@ -9,6 +9,7 @@ import { Autoplay, Navigation, Pagination } from "swiper";
 
 // import Swiper styles
 import "swiper/css";
+import { countryPreviewPhotos } from "@/constants/countryPreviewPhotosCompiled";
 
 interface Props {
   countryName: string;
@@ -26,6 +27,8 @@ const SwiperNavButtons = () => {
 };
 // https://codesandbox.io/s/brave-gwen-ddfsbg?file=/styles/Bootstrap.module.css:42-55
 const CountryPhotosCarousel = (props: Props) => {
+  const { countryName } = props;
+  const countryPhotos = countryPreviewPhotos.get(countryName);
   return (
     <>
       <Swiper
@@ -44,7 +47,7 @@ const CountryPhotosCarousel = (props: Props) => {
         navigation={true}
         modules={[Autoplay, Navigation, Pagination]}
       >
-        {UsaPreviewPhotos.previewPhotos.map((photo, index) => (
+        {countryPhotos?.previewPhotos.map((photo, index) => (
           <SwiperSlide key={index}>
             <img src={photo.photoUrl} className="mx-auto" />
           </SwiperSlide>
