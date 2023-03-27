@@ -21,7 +21,7 @@ const AppNavBar = () => {
             height={300}
             alt="world-globe"
           />
-          <span className="ml-3 text-md">Chun&#39;s Odyssey</span>
+          <span className="ml-3 text-md">Chun Travels</span>
         </Link>
         <div className="flex flex-1 items-center justify-end md:justify-between">
           <nav aria-label="Site Nav" className=" md:block">

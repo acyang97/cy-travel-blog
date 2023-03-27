@@ -8,6 +8,7 @@ import ScrollUp from "../../../components/ScrollUp";
 import CountryPageHeader from "./CountryPageHeader";
 import { PostMetadata } from "@/interfaces/PostMetadata";
 import NoPostsYet from "./NoPostsYet";
+import CountryPhotosCarousel from "@/components/CountryPhotosCarousel";
 
 interface Props {
   params: {
@@ -57,7 +58,10 @@ const CountryPage = (props: Props) => {
             {postPreviews}
           </div>
         ) : (
-          <NoPostsYet countryName={countrySlug} />
+          <>
+            <CountryPhotosCarousel countryName={countrySlug} />
+            <NoPostsYet countryName={countrySlug} />
+          </>
         )}
       </div>
     </div>
