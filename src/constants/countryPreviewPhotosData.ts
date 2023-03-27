@@ -20,12 +20,6 @@ export const UsaPreviewPhotos: CountryPreviewPhotos = {
     },
     {
       photoUrl:
-        "https://imagedelivery.net/zHaoQUqTgVRyao5aPR7rcg/846ee619-b2c9-44d1-b67c-f827a5011900/public",
-      photoType: PhotoType.LANDSCAPE,
-      photoCaption: "San Francisco Streets",
-    },
-    {
-      photoUrl:
         "https://imagedelivery.net/zHaoQUqTgVRyao5aPR7rcg/b58738d2-0abb-48be-3cd6-cc17223fbf00/public",
       photoType: PhotoType.LANDSCAPE,
       photoCaption: "Golden Gate Bridge",

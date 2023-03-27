@@ -16,7 +16,7 @@ const AppFooter = () => {
             height={300}
             alt="world-globe"
           />
-          <span className="ml-3 text-xl">Chun&#39;s Odyssey</span>
+          <span className="ml-3 text-xl">Chun Travels</span>
         </a>
         <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
           © 2023 -{" "}
@@ -26,7 +26,7 @@ const AppFooter = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            Chun&#39;s Odyssey
+            Chun Travels
           </a>
         </p>
         <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
