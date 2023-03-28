@@ -1,4 +1,5 @@
 import { CountryPreviewPhotos } from "@/interfaces/Country.interface";
+import { AlbaniaPreviewPhotos } from "./countryPhotos/albaniaPhotos";
 import { CroatiaPreviewPhotos } from "./countryPhotos/croatiaPhotos";
 import { HungaryPreviewPhotos } from "./countryPhotos/hungaryPhotos";
 import { MaltaPreviewPhotos } from "./countryPhotos/maltaPhotos";
@@ -13,4 +14,5 @@ export const countryPreviewPhotos: Map<String, CountryPreviewPhotos> = new Map([
   ["Switzerland", SwitzerlandPreviewPhotos],
   ["Montenegro", MontenegroPreviewPhotos],
   ["Malta", MaltaPreviewPhotos],
+  ["Albania", AlbaniaPreviewPhotos],
 ]);
