@@ -4,5 +4,17 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "cSpell.words": ["Berat", "Gjirokast", "Gjirokastër", "Swiper", "r"]
+  "cSpell.words": [
+    "Berat",
+    "Eiger",
+    "Gjirokast",
+    "Gjirokastër",
+    "Gornergrat",
+    "Iseltwald",
+    "Lautebrunnen",
+    "Oeschinen",
+    "Swiper",
+    "Wengen",
+    "r"
+  ]
 }

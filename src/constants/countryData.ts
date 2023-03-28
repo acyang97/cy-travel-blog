@@ -1624,7 +1624,7 @@ export const countriesData: Country[] = [
     code: "CH",
     visited: true,
     year: 2022,
-    posts: ["post-1", "post-2", "post-3", "post-5"],
+    posts: [],
     continent: Continent.EUROPE,
     introduction:
       "Switzerland is a beautiful country located in Central Europe, known for its stunning Alpine scenery, rich culture, and world-class skiing. Visitors to Switzerland can explore the charming cities of Zurich and Geneva, as well as the breathtaking mountain landscapes of the Swiss Alps. The country is also home to a variety of cultural and historical attractions, including the iconic Matterhorn mountain and the stunning Rhine Falls. Swiss cuisine is delicious and varied, with traditional dishes like fondue, raclette, and rosti all on offer. With its stunning landscapes, rich culture, and delicious cuisine, Switzerland is a destination that's sure to enchant any traveler.",

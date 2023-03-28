@@ -53,15 +53,16 @@ const CountryPage = (props: Props) => {
         countryCode={countryCode}
       />
       <div className="mx-12 md:mx-20 lg:mx-40 my-12">
-        {checkIfCountryExistHasPost(countrySlug) ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 content-center">
-            {postPreviews}
-          </div>
-        ) : (
-          <>
-            <CountryPhotosCarousel countryName={countrySlug} />
-            <NoPostsYet countryName={countrySlug} />
-          </>
+        <div className="mb-10 md:mb-20">
+          {checkIfCountryExistHasPost(countrySlug) && (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 content-center">
+              {postPreviews}
+            </div>
+          )}
+        </div>
+        <CountryPhotosCarousel countryName={countrySlug} />
+        {!checkIfCountryExistHasPost(countrySlug) && (
+          <NoPostsYet countryName={countrySlug} />
         )}
       </div>
     </div>
