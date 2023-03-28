@@ -57,6 +57,10 @@ const SwiperNavButtons = () => {
 const CountryPhotosCarousel = (props: Props) => {
   const { countryName } = props;
   const countryPhotos = countryPreviewPhotos.get(countryName);
+  if (!countryPhotos) {
+    return null;
+  }
+
   return (
     <>
       <Swiper
