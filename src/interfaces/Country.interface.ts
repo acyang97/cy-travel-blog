@@ -31,7 +31,7 @@ export enum PhotoType {
 }
 
 export interface PreviewPhoto {
-  photoType: PhotoType;
+  photoType?: PhotoType;
   photoUrl: string;
   photoCaption: string;
 }
