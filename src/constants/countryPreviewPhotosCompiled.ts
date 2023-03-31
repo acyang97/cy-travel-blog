@@ -2,7 +2,7 @@ import { CountryPreviewPhotos } from "@/interfaces/Country.interface";
 import { AlbaniaPreviewPhotos } from "./countryPhotos/albaniaPhotos";
 import { BosniaPreviewPhotos } from "./countryPhotos/bosniaPhotos";
 import { CroatiaPreviewPhotos } from "./countryPhotos/croatiaPhotos";
-import { CzechPreviewPhotos } from "./countryPhotos/CzechPhotos";
+import { CzechPreviewPhotos } from "./countryPhotos/czechPhotos";
 import { HungaryPreviewPhotos } from "./countryPhotos/hungaryPhotos";
 import { MaltaPreviewPhotos } from "./countryPhotos/maltaPhotos";
 import { MexicoPreviewPhotos } from "./countryPhotos/mexicoPhotos";
