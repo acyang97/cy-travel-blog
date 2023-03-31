@@ -11,10 +11,10 @@ const NoPostsYet = (props: Props) => {
   const formattedName = countryName.replaceAll("-", " ");
 
   return (
-    <section className="flex items-center justify-center px-10 dark:text-gray-600">
+    <section className="flex items-center justify-center px-10 text-gray-600">
       <div>
         <div className="max-w-md text-center">
-          <p className="mt-4 mb-8 dark:text-gray-400 text-sm">
+          <p className="mt-4 mb-8 text-gray-400 text-sm">
             Sorry, I haven't written a post for {formattedName} yet. In the
             meantime, check out posts on other destinations!
           </p>

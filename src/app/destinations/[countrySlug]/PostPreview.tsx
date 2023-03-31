@@ -27,7 +27,7 @@ const PostPreview = (props: Props) => {
 
       <div className="p-5">
         <Link href={`destinations/${slug}/${post.slug}`}>
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
             {title}
           </h5>
         </Link>

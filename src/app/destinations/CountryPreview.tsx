@@ -22,14 +22,12 @@ const CountryPreview = (props: Country) => {
       <div className="py-5 text-center">
         <Link
           href={`/destinations/${name}`}
-          className="block text-xl font-bold text-gray-800 dark:text-white"
+          className="block text-xl font-bold text-white"
           role="link"
         >
           {formattedName}
         </Link>
-        <span className="text-sm text-gray-700 dark:text-gray-200">
-          Last been to on {year}
-        </span>
+        <span className="text-sm text-white">Last been to on {year}</span>
       </div>
     </div>
   );
