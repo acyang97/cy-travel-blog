@@ -23,10 +23,7 @@ export const countriesData: Country[] = [
     code: "AL",
     visited: true,
     year: 2022,
-    posts: [
-      "3-Reasons-To-Travel-To-Albania",
-      "Roaming-Through-Europe:-My-Solo-Backpacking-Adventure",
-    ],
+    posts: ["3-Reasons-To-Travel-To-Albania"],
     continent: Continent.EUROPE,
     introduction:
       "Albania is a small country in Southeastern Europe with a rich history and stunning natural beauty. Its coastline, mountain ranges, and lakes make it a popular destination for outdoor enthusiasts, while its cities offer historic landmarks, bustling markets, and a vibrant nightlife. Albanian cuisine is a unique blend of Mediterranean and Balkan influences. Albania is a diverse and dynamic country that combines ancient traditions with modern innovations, making it a destination worth exploring.",
@@ -838,7 +835,7 @@ export const countriesData: Country[] = [
     code: "JP",
     visited: true,
     year: 2023,
-    posts: ["Cherry-Blossom-Paradise:-Exploring Kanazawa's-Sakura-Season"],
+    posts: ["Cherry-Blossom-Paradise-In-Kanazawa"],
     continent: Continent.ASIA,
     introduction:
       "Japan is a fascinating country located in East Asia, known for its unique culture, stunning scenery, and delicious cuisine. Visitors to Japan can explore the bright lights of Tokyo, the historic streets of Kyoto, and the serene gardens of Hiroshima. The country is also home to a variety of natural wonders, including Mount Fuji and the cherry blossom trees that bloom in the spring. Japanese cuisine is diverse and delicious, with traditional dishes like sushi, ramen, and tempura all on offer. With its rich history, stunning landscapes, and warm hospitality, Japan is a destination that's sure to leave a lasting impression on any traveler.",
