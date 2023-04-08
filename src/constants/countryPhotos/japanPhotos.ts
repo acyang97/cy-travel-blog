@@ -20,7 +20,7 @@ export const JapanPreviewPhotos: CountryPreviewPhotos = {
     },
     {
       photoUrl:
-        "https://imagedelivery.net/zHaoQUqTgVRyao5aPR7rcg/b08a0945-6991-47c9-fbd2-b54de62c5000/public",
+        "https://imagedelivery.net/zHaoQUqTgVRyao5aPR7rcg/a2b9d065-9807-49f9-dd4e-b7df54932c00/public",
       photoCaption: "Byodo-In, Kyoto",
     },
     {
