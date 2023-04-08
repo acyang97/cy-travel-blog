@@ -6,14 +6,14 @@ previewPhoto: "https://imagedelivery.net/zHaoQUqTgVRyao5aPR7rcg/d7561c5e-9161-47
 time: "3"
 ---
 
-Albania was never on my bucket list and I barely knew anything about the country. I just happened to watched a <a href="https://www.youtube.com/watch?v=q_BCdZUxRI8" target="_blank">video from Yes Theory</a> about Albania. As someone who enjoys travelling to less ordinary places where people I know have never really heard of, Albania piqued my interest after watching that video. Many people I met along the way were surprised Albania is only the 2nd European country that I visited so far back then. This might be unconventional, but I always feel that people should visit countires where many tourists don't know yet. Travelling to a country with little tourists feels like you have the entire place to yourself and it is so peaceful.
+Albania was never on my bucket list and I barely knew anything about the country. I just happened to watched a <a href="https://www.youtube.com/watch?v=q_BCdZUxRI8" target="_blank">video from Yes Theory</a> about Albania. As someone who enjoys travelling to less ordinary places where people I know have never really heard of, Albania piqued my interest after watching that video. Many people I met along the way were surprised Albania is only the 2nd European country that I visited so far back then. This might be unconventional, but I always feel that people should visit countries where many tourists don't know yet. Travelling to a country with little tourists feels like you have the entire place to yourself and it is so peaceful.
 
 <figure style="text-align:center">
   <center><img src="https://imagedelivery.net/zHaoQUqTgVRyao5aPR7rcg/d7561c5e-9161-47df-761c-e9a9d9dabf00/public" alt="Landscape of Gjirokastër" style="width:100%;margin:0" align="center"></center>
   <figcaption align="center" style="font-weight:200;color:black"><b>Landscape of Gjirokastër</b></figcaption>
 </figure>
 
-Albania gave me a good feeling that it is one of those mysterious countries that I will not be disappointed. Hence, my impulsive self decided to start off my grad trip in Albania. I spent 2 weeks in this beautiful country and it is definitely one of my favoruite countries that I've been. The country has every element that makes it one of the best countries to visit. I am going to share with you 5 reasons why you should put Albania into your bucket list right now!
+Albania gave me a good feeling that it is one of those mysterious countries that I will not be disappointed. Hence, my impulsive self decided to start off my grad trip in Albania. I spent 2 weeks in this beautiful country and it is definitely one of my favorite countries that I've been. The country has every element that makes it one of the best countries to visit. I am going to share with you 5 reasons why you should put Albania into your bucket list right now!
 
 ## 1. It is cheap
 
