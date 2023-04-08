@@ -4,6 +4,8 @@ import { BosniaPreviewPhotos } from "./countryPhotos/bosniaPhotos";
 import { CroatiaPreviewPhotos } from "./countryPhotos/croatiaPhotos";
 import { CzechPreviewPhotos } from "./countryPhotos/czechPhotos";
 import { HungaryPreviewPhotos } from "./countryPhotos/hungaryPhotos";
+import { JapanPreviewPhotos } from "./countryPhotos/japanPhotos";
+import { JordanPreviewPhotos } from "./countryPhotos/jordanPhotos";
 import { MaltaPreviewPhotos } from "./countryPhotos/maltaPhotos";
 import { MexicoPreviewPhotos } from "./countryPhotos/mexicoPhotos";
 import { MontenegroPreviewPhotos } from "./countryPhotos/montenegroPhotos";
@@ -21,4 +23,6 @@ export const countryPreviewPhotos: Map<String, CountryPreviewPhotos> = new Map([
   ["Bosnia-and-Herzegovina", BosniaPreviewPhotos],
   ["Czech-Republic", CzechPreviewPhotos],
   ["Mexico", MexicoPreviewPhotos],
+  ["Jordan", JordanPreviewPhotos],
+  ["Japan", JapanPreviewPhotos],
 ]);
