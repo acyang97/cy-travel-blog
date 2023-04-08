@@ -838,7 +838,9 @@ export const countriesData: Country[] = [
     code: "JP",
     visited: true,
     year: 2019,
-    posts: [],
+    posts: [
+      // "Sakura-Season-In-Kanazawa"
+    ],
     continent: Continent.ASIA,
     introduction:
       "Japan is a fascinating country located in East Asia, known for its unique culture, stunning scenery, and delicious cuisine. Visitors to Japan can explore the bright lights of Tokyo, the historic streets of Kyoto, and the serene gardens of Hiroshima. The country is also home to a variety of natural wonders, including Mount Fuji and the cherry blossom trees that bloom in the spring. Japanese cuisine is diverse and delicious, with traditional dishes like sushi, ramen, and tempura all on offer. With its rich history, stunning landscapes, and warm hospitality, Japan is a destination that's sure to leave a lasting impression on any traveler.",
