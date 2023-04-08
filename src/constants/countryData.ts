@@ -837,7 +837,7 @@ export const countriesData: Country[] = [
     dialCode: "+81",
     code: "JP",
     visited: true,
-    year: 2019,
+    year: 2023,
     posts: [
       // "Sakura-Season-In-Kanazawa"
     ],
