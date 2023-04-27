@@ -4,9 +4,9 @@ import ScrollUp from "@/components/ScrollUp";
 import { PostMetadata } from "@/interfaces/PostMetadata";
 import { checkIfCountryExistHasPost, getCountry } from "@/utils/country.utils";
 import { getPostMetadata } from "@/utils/getPostMetadata";
-import CountryPageHeader from "./CountryPageHeader";
-import NoPostsYet from "./NoPostsYet";
-import PostPreview from "./PostPreview";
+import CountryPageHeader from "../CountryPageHeader";
+import NoPostsYet from "../NoPostsYet";
+import PostPreview from "../PostPreview";
 
 interface Props {
   countrySlug: string;

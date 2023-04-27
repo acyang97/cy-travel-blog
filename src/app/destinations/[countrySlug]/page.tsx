@@ -9,7 +9,7 @@ import CountryPageHeader from "./CountryPageHeader";
 import { PostMetadata } from "@/interfaces/PostMetadata";
 import NoPostsYet from "./NoPostsYet";
 import CountryPhotosCarousel from "@/components/CountryPhotosCarousel";
-import JapanCustomizedPage from "./JapanCustomizedPage";
+import JapanCustomizedPage from "./Japan/JapanCustomizedPage";
 
 interface Props {
   params: {
