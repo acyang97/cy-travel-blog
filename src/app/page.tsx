@@ -10,7 +10,7 @@ const HomePage = () => {
         <div className="flex items-center justify-center">
           <p>
             If a country is filled with a darker color, it means I've explored
-            more of it. :)
+            more of it. 😛
           </p>
         </div>
         <D3WorldMap />
