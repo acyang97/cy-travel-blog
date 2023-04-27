@@ -25,11 +25,6 @@ export const JapanPreviewPhotos: CountryPreviewPhotos = {
     },
     {
       photoUrl:
-        "https://imagedelivery.net/zHaoQUqTgVRyao5aPR7rcg/67da519c-4d31-4570-2cd0-2a2f4cc54d00/public",
-      photoCaption: "Ukiha Inari Shrine, Kyushu",
-    },
-    {
-      photoUrl:
         "https://imagedelivery.net/zHaoQUqTgVRyao5aPR7rcg/c26ebc5d-f34f-4d0c-931d-6551f95e7100/public",
       photoCaption: "Wazuka, Kyoto",
     },
