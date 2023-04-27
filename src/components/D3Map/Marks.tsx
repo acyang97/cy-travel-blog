@@ -26,7 +26,7 @@ const getBestWidth = (width: number | undefined): number => {
 export const Marks = (props: Props) => {
   const { data } = props;
   const { width } = useWindowSize();
-  const bestWidth = getBestWidth(width as number);
+  const bestWidth = getBestWidth(width);
   const projection = geoEqualEarth().fitSize(
     [bestWidth * 0.95, bestWidth * 0.5],
     data
