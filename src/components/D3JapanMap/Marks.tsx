@@ -15,10 +15,10 @@ const getBestWidth = (width: number | undefined): number => {
     return 500;
   }
   if (width <= 480) {
-    return 320;
+    return 420;
   }
   if (width <= 768) {
-    return 500;
+    return 700;
   }
   return width;
 };

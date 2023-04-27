@@ -36,7 +36,7 @@ const JapanCustomizedPage = (props: Props) => {
       />
       <div className="container mx-auto flex my-6 items-center justify-center flex-col">
         <div className="text-center lg:w-2/3 w-full">
-          <h1 className="title-font text-3xl mb-4 text-gray-900">
+          <h1 className="title-font sm:text-2xl md:text-3xl mb-4 text-gray-900">
             I&#39;ve been to 28 prefectures!
           </h1>
         </div>
