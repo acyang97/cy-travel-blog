@@ -8,12 +8,35 @@ interface Props {
   data: any;
 }
 
+const getBestWidth = (width: number) => {
+  if (width <= 320) {
+    return 210;
+  }
+  if (width <= 480) {
+    return 350;
+  }
+  if (width <= 768) {
+    return 500;
+  }
+  if (width <= 1024) {
+    return 800;
+  }
+  if (width <= 1224) {
+    return 1000;
+  }
+  if (width <= 1824) {
+    return 1300;
+  }
+  return width;
+};
+
 export const Marks = (props: Props) => {
   const [isHovering, setIsHovering] = useState(false);
   const { data } = props;
   const { width } = useWindowSize();
+  const bestWidth = getBestWidth(width!);
   const projection = geoEqualEarth().fitSize(
-    [width! * 0.95, width! * 0.5],
+    [bestWidth * 0.95, bestWidth * 0.5],
     data
   );
   const path = geoPath(projection);
@@ -27,7 +50,7 @@ export const Marks = (props: Props) => {
   };
   return (
     <div className="flex items-center">
-      <svg width={width! * 0.95} height={width! * 0.6}>
+      <svg width={bestWidth * 0.95} height={bestWidth * 0.6}>
         <g className="marks">
           {data?.features?.map((feature: any) => {
             if (feature.properties.visited) {
