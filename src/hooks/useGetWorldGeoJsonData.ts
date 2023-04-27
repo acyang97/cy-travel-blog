@@ -11,6 +11,6 @@ export const useGetWorldGeoJsonData = () => {
     const geojsonData = feature(mapData as any, world as any);
     setData(geojsonData as any);
   }, []);
-  console.log("geojsonData", data);
+
   return data;
 };

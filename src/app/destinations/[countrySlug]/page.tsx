@@ -30,7 +30,6 @@ const CountryPage = (props: Props) => {
   const { countrySlug } = props.params;
 
   if (!getCountry(countrySlug)) {
-    console.log("countrySlug", countrySlug);
     notFound();
   }
   let postPreviews;
