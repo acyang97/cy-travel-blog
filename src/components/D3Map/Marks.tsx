@@ -10,7 +10,10 @@ interface Props {
   data: any;
 }
 
-const getBestWidth = (width: number) => {
+const getBestWidth = (width: number | undefined): number => {
+  if (width === undefined) {
+    return 500;
+  }
   if (width <= 480) {
     return 320;
   }
@@ -23,7 +26,7 @@ const getBestWidth = (width: number) => {
 export const Marks = (props: Props) => {
   const { data } = props;
   const { width } = useWindowSize();
-  const bestWidth = getBestWidth(width!);
+  const bestWidth = getBestWidth(width as number);
   const projection = geoEqualEarth().fitSize(
     [bestWidth * 0.95, bestWidth * 0.5],
     data
@@ -71,9 +74,9 @@ export const Marks = (props: Props) => {
               <Whisper
                 followCursor
                 speaker={<Tooltip>{feature.properties.name}</Tooltip>}
+                key={feature.properties.id}
               >
                 <path
-                  key={feature.properties.id}
                   className="path-not-visited"
                   d={path(feature) as string}
                   fill="#cbd5e1"
