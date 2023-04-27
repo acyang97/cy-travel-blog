@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import useMobileDetect from "./useMobileDetect";
 
 interface IWindow {
   width: undefined | number;
@@ -13,6 +14,7 @@ export function useWindowSize() {
     width: undefined,
     height: undefined,
   });
+  const { isMobile } = useMobileDetect();
   useEffect(() => {
     // Handler to call on window resize
     function handleResize() {
@@ -25,7 +27,12 @@ export function useWindowSize() {
     // Add event listener
     window.addEventListener("resize", handleResize);
     // Call handler right away so state gets updated with initial window size
-    handleResize();
+    if (windowSize.width === undefined || windowSize.height === undefined) {
+      handleResize();
+    }
+    if (!isMobile()) {
+      handleResize();
+    }
     // Remove event listener on cleanup
     return () => window.removeEventListener("resize", handleResize);
   }, []); // Empty array ensures that effect is only run on mount
