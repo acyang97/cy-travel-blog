@@ -846,12 +846,12 @@ export const countriesData: Country[] = [
     dialCode: "+81",
     code: "JP",
     visited: true,
-    percentageOfCountryVisited: 70,
+    percentageOfCountryVisited: 90,
     year: 2023,
     posts: ["Cherry-Blossom-Paradise-In-Kanazawa"],
     continent: Continent.ASIA,
     introduction:
-      "Japan is a fascinating country located in East Asia, known for its unique culture, stunning scenery, and delicious cuisine. Visitors to Japan can explore the bright lights of Tokyo, the historic streets of Kyoto, and the serene gardens of Hiroshima. The country is also home to a variety of natural wonders, including Mount Fuji and the cherry blossom trees that bloom in the spring. Japanese cuisine is diverse and delicious, with traditional dishes like sushi, ramen, and tempura all on offer. With its rich history, stunning landscapes, and warm hospitality, Japan is a destination that's sure to leave a lasting impression on any traveler.",
+      "Japan is a fascinating country located in East Asia, known for its unique culture, stunning scenery, and delicious cuisine. Visitors to Japan can explore the bright lights of Tokyo, the historic streets of Kyoto, and the serene gardens of Hiroshima. The country is also home to a variety of natural wonders, including Mount Fuji and the cherry blossom trees that bloom in the spring. Japanese cuisine is diverse and delicious, with traditional dishes like sushi, ramen, and tempura all on offer. With its rich history, stunning landscapes, and warm hospitality, Japan is a destination that's sure to leave a lasting impression on any traveler. I've been to Japan for 7 times and it is definitely one of my favorite countries that I will never get bored going to over and over again. I'm hoping to go back to the country in Autumn in the future!",
   },
   {
     name: "Jordan",

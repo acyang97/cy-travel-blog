@@ -1,38 +1,20 @@
-"use cient";
+import CountryPhotosCarousel from "@/components/CountryPhotosCarousel";
+import D3JapanMap from "@/components/D3JapanMap/D3JapanMap";
+import ScrollUp from "@/components/ScrollUp";
+import { PostMetadata } from "@/interfaces/PostMetadata";
 import { checkIfCountryExistHasPost, getCountry } from "@/utils/country.utils";
 import { getPostMetadata } from "@/utils/getPostMetadata";
-import PostPreview from "./PostPreview";
-import { notFound } from "next/navigation";
-import { countriesTravelledTo } from "@/constants/country.constants";
-import ScrollUp from "../../../components/ScrollUp";
-import CountryPageHeader from "./CountryPageHeader";
-import { PostMetadata } from "@/interfaces/PostMetadata";
-import NoPostsYet from "./NoPostsYet";
-import CountryPhotosCarousel from "@/components/CountryPhotosCarousel";
-import JapanCustomizedPage from "./Japan/JapanCustomizedPage";
+import CountryPageHeader from "../CountryPageHeader";
+import NoPostsYet from "../NoPostsYet";
+import PostPreview from "../PostPreview";
 
 interface Props {
-  params: {
-    countrySlug: string;
-  };
+  countrySlug: string;
 }
 
-export const generateStaticParams = async (): Promise<
-  {
-    countrySlug: string;
-  }[]
-> => {
-  return countriesTravelledTo.map((country) => ({
-    countrySlug: country.name,
-  }));
-};
+const JapanCustomizedPage = (props: Props) => {
+  const { countrySlug } = props;
 
-const CountryPage = (props: Props) => {
-  const { countrySlug } = props.params;
-
-  if (!getCountry(countrySlug)) {
-    notFound();
-  }
   let postPreviews;
   if (checkIfCountryExistHasPost(countrySlug)) {
     const postMetadata = getPostMetadata(countrySlug) as PostMetadata[];
@@ -41,14 +23,8 @@ const CountryPage = (props: Props) => {
     ));
   }
 
-  // Make a condition to say if it is Japan, show a specific compoentn
-
   const introduction = getCountry(countrySlug)?.introduction;
   const countryCode = getCountry(countrySlug)?.code;
-
-  if (countrySlug === "Japan") {
-    return <JapanCustomizedPage countrySlug={countrySlug} />;
-  }
 
   return (
     <div>
@@ -58,6 +34,16 @@ const CountryPage = (props: Props) => {
         introduction={introduction}
         countryCode={countryCode}
       />
+      <div className="container mx-auto flex my-6 items-center justify-center flex-col">
+        <div className="text-center lg:w-2/3 w-full">
+          <h1 className="title-font text-3xl mb-4 text-gray-900">
+            I&#39;ve been to 28 prefectures!
+          </h1>
+        </div>
+      </div>
+      <div className="mt-4">
+        <D3JapanMap />
+      </div>
       <div className="mx-12 md:mx-20 lg:mx-40 my-12">
         <div className="mb-10 md:mb-20">
           {checkIfCountryExistHasPost(countrySlug) && (
@@ -75,4 +61,4 @@ const CountryPage = (props: Props) => {
   );
 };
 
-export default CountryPage;
+export default JapanCustomizedPage;

@@ -1,11 +1,10 @@
 "use client";
 import { useWindowSize } from "@/hooks/useWindowSize";
-import { geoPath, geoEqualEarth } from "d3";
+import { geoPath, geoMercator } from "d3";
 import Link from "next/link";
 // https://github.com/rsuite/rsuite/issues/1953
 import "rsuite/dist/rsuite-no-reset.min.css";
 import { Tooltip, Whisper } from "rsuite";
-import { getColorToFillCountry } from "@/utils/country.utils";
 
 interface Props {
   data: any;
@@ -28,7 +27,8 @@ export const Marks = (props: Props) => {
   const { data } = props;
   const { width } = useWindowSize();
   const bestWidth = getBestWidth(width);
-  const projection = geoEqualEarth().fitSize(
+  // https://github.com/d3/d3-geo
+  const projection = geoMercator().fitSize(
     [bestWidth * 0.95, bestWidth * 0.5],
     data
   );
@@ -39,42 +39,17 @@ export const Marks = (props: Props) => {
       <svg width={bestWidth * 0.95} height={bestWidth * 0.6}>
         <g className="marks">
           {data?.features?.map((feature: any) => {
-            if (feature.properties.visited) {
-              return (
-                <Link
-                  key={feature.properties.id}
-                  href={`/destinations/${feature.properties.formattedName}`}
-                  role="link"
-                >
-                  <Whisper
-                    followCursor
-                    speaker={<Tooltip>{feature.properties.name}</Tooltip>}
-                  >
-                    <path
-                      className="path-visited"
-                      d={path(feature) as string}
-                      fill={
-                        feature.properties.visited === true
-                          ? getColorToFillCountry(
-                              feature.properties.formattedName
-                            )
-                          : "#cbd5e1"
-                      }
-                    />
-                  </Whisper>
-                </Link>
-              );
-            }
             return (
               <Whisper
                 followCursor
                 speaker={<Tooltip>{feature.properties.name}</Tooltip>}
-                key={feature.properties.id}
               >
                 <path
-                  className="path-not-visited"
+                  className="path-visited-japan"
                   d={path(feature) as string}
-                  fill="#cbd5e1"
+                  fill={
+                    feature.properties.visited === true ? "#ff4698" : "#cbd5e1"
+                  }
                 />
               </Whisper>
             );

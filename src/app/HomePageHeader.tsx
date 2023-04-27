@@ -28,7 +28,7 @@ const HomePageHeader = () => {
         </div>
         <div className="text-center my-4">
           <h1 className="title-font text-3xl mb-4 text-gray-900">
-            I&#39;ve been to 28 countries.
+            I&#39;ve been to 28 countries
           </h1>
           <Link
             href="/destinations"
