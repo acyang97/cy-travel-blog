@@ -30,3 +30,33 @@
   margin: 0px 0.5rem;
   margin-top: 30px;
 }
+
+.marks circle {
+  fill: #137b80;
+}
+.path-visited {
+  stroke: #3f3f46;
+  stroke-width: 0.2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.path-visited:hover {
+  fill: #f59e0b;
+  cursor: pointer;
+}
+
+.path-not-visited {
+  stroke: #3f3f46;
+  stroke-width: 0.2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.path-not-visited:hover {
+  cursor: pointer;
+}
+
+.path {
+  stroke: cornsilk;
+}

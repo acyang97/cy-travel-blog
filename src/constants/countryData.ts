@@ -77,7 +77,7 @@ export const countriesData: Country[] = [
     continent: Continent.ANTARCTICA,
   },
   {
-    name: "Antigua and Barbuda",
+    name: "Antigua-and-Barbuda",
     dialCode: "+1268",
     code: "AG",
     visited: false,
@@ -329,7 +329,7 @@ export const countriesData: Country[] = [
     continent: Continent.NORTH_AMERICA,
   },
   {
-    name: "Central African Republic",
+    name: "Central-African-Republic",
     dialCode: "+236",
     code: "CF",
     visited: false,
@@ -388,7 +388,7 @@ export const countriesData: Country[] = [
     continent: Continent.AFRICA,
   },
   {
-    name: "Congo, The Democratic Republic of the Congo",
+    name: "Democratic-Republic-of-Congo",
     dialCode: "+243",
     code: "CD",
     visited: false,
@@ -396,7 +396,7 @@ export const countriesData: Country[] = [
     continent: Continent.AFRICA,
   },
   {
-    name: "Cook Islands",
+    name: "Cook-Islands",
     dialCode: "+682",
     code: "CK",
     visited: false,
@@ -404,7 +404,7 @@ export const countriesData: Country[] = [
     continent: Continent.OCEANIA,
   },
   {
-    name: "Costa Rica",
+    name: "Costa-Rica",
     dialCode: "+506",
     code: "CR",
     visited: false,
@@ -412,7 +412,7 @@ export const countriesData: Country[] = [
     continent: Continent.NORTH_AMERICA,
   },
   {
-    name: "Cote d'Ivoire",
+    name: "Ivory-Coast",
     dialCode: "+225",
     code: "CI",
     visited: false,
@@ -474,7 +474,7 @@ export const countriesData: Country[] = [
     continent: Continent.AFRICA,
   },
   {
-    name: "Dominican Republic",
+    name: "Dominican-Republic",
     dialCode: "+1849",
     code: "DO",
     visited: false,
@@ -498,7 +498,7 @@ export const countriesData: Country[] = [
     continent: Continent.AFRICA,
   },
   {
-    name: "El Salvador",
+    name: "El-Salvador",
     dialCode: "+503",
     code: "SV",
     visited: false,
@@ -506,7 +506,7 @@ export const countriesData: Country[] = [
     continent: Continent.NORTH_AMERICA,
   },
   {
-    name: "Equatorial Guinea",
+    name: "Equatorial-Guinea",
     dialCode: "+240",
     code: "GQ",
     visited: false,
@@ -578,7 +578,7 @@ export const countriesData: Country[] = [
     continent: Continent.EUROPE,
   },
   {
-    name: "French Guiana",
+    name: "French-Guiana",
     dialCode: "+594",
     code: "GF",
     visited: false,
@@ -586,7 +586,7 @@ export const countriesData: Country[] = [
     continent: Continent.SOUTH_AMERICA,
   },
   {
-    name: "French Polynesia",
+    name: "French-Polynesia",
     dialCode: "+689",
     code: "PF",
     visited: false,
@@ -994,7 +994,7 @@ export const countriesData: Country[] = [
     continent: Continent.ASIA,
   },
   {
-    name: "Macedonia",
+    name: "North-Macedonia",
     dialCode: "+389",
     code: "MK",
     visited: false,
@@ -1389,7 +1389,7 @@ export const countriesData: Country[] = [
     continent: Continent.AFRICA,
   },
   {
-    name: "Saint Barthelemy",
+    name: "Saint-Barthelemy",
     dialCode: "+590",
     code: "BL",
     visited: false,
@@ -1397,7 +1397,7 @@ export const countriesData: Country[] = [
     continent: Continent.NORTH_AMERICA,
   },
   {
-    name: "Saint Kitts and Nevis",
+    name: "Saint-Kitts-and-Nevis",
     dialCode: "+1869",
     code: "KN",
     visited: false,
@@ -1413,7 +1413,7 @@ export const countriesData: Country[] = [
     continent: Continent.NORTH_AMERICA,
   },
   {
-    name: "Saint Martin",
+    name: "Saint-Martin",
     dialCode: "+590",
     code: "MF",
     visited: false,
@@ -1421,7 +1421,7 @@ export const countriesData: Country[] = [
     continent: Continent.NORTH_AMERICA,
   },
   {
-    name: "Saint Pierre and Miquelon",
+    name: "Saint-Pierre-and-Miquelon",
     dialCode: "+508",
     code: "PM",
     visited: false,
@@ -1429,7 +1429,7 @@ export const countriesData: Country[] = [
     continent: Continent.NORTH_AMERICA,
   },
   {
-    name: "Saint Vincent and the Grenadines",
+    name: "Saint-Vincent-and-the-Grenadines",
     dialCode: "+1784",
     code: "VC",
     visited: false,
@@ -1445,7 +1445,7 @@ export const countriesData: Country[] = [
     continent: Continent.OCEANIA,
   },
   {
-    name: "San Marino",
+    name: "San-Marino",
     dialCode: "+378",
     code: "SM",
     visited: false,
@@ -1453,7 +1453,7 @@ export const countriesData: Country[] = [
     continent: Continent.EUROPE,
   },
   {
-    name: "Sao Tome and Principe",
+    name: "Sao-Tome-and-Principe",
     dialCode: "+239",
     code: "ST",
     visited: false,
@@ -1461,7 +1461,7 @@ export const countriesData: Country[] = [
     continent: Continent.NORTH_AMERICA,
   },
   {
-    name: "Saudi Arabia",
+    name: "Saudi-Arabia",
     dialCode: "+966",
     code: "SA",
     visited: false,
@@ -1493,7 +1493,7 @@ export const countriesData: Country[] = [
     continent: Continent.AFRICA,
   },
   {
-    name: "Sierra Leone",
+    name: "Sierra-Leone",
     dialCode: "+232",
     code: "SL",
     visited: false,

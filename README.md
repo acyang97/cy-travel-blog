@@ -51,3 +51,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
   <figcaption align="center" style="font-weight:200;color:black"><b>INSERT SUBTITLE</b></figcaption>
 </figure>
 ```
+
+5. If it is a new country, add visited label to the mapData.ts

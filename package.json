@@ -23,22 +23,21 @@
   "devDependencies": {
     "@headlessui/react": "^1.7.13",
     "@tailwindcss/typography": "^0.5.9",
-    "@types/fslightbox-react": "^1.7.0",
+    "@types/d3": "^7.4.0",
     "@types/lodash": "^4.14.191",
     "@types/react": "^18.0.28",
-    "@types/react-simple-maps": "^3.0.0",
+    "@types/topojson": "^3.2.3",
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
     "autoprefixer": "^10.4.13",
+    "d3": "^7.8.4",
     "eslint": "^8.34.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "fslightbox-react": "^1.7.2",
-    "lightbox.js-react": "^0.4.7",
     "lodash": "^4.17.21",
     "postcss": "^8.4.21",
-    "react-simple-maps": "^3.0.0",
     "react-tooltip": "4.5",
     "swiper": "^9.1.1",
-    "tailwindcss": "^3.2.6"
+    "tailwindcss": "^3.2.6",
+    "topojson": "^3.0.2"
   }
 }
