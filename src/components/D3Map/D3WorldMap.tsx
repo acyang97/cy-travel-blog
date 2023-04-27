@@ -1,12 +1,11 @@
 "use client";
-import { geoJsonMapData } from "@/constants/worldMap.geojson";
-import { useGetWorldGeoJsonData } from "@/hooks/useGetWorldGeoJsonData";
-import _ from "lodash";
+import { mapData } from "@/constants/mapData";
+import { useGetGeoJsonData } from "@/hooks/useGetGeoJsonData";
 import React from "react";
 import { Marks } from "./Marks";
 
 const D3WorldMap = () => {
-  const geojsonData = useGetWorldGeoJsonData();
+  const geojsonData = useGetGeoJsonData(mapData);
 
   return <Marks data={geojsonData} />;
 };

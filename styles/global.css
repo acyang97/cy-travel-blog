@@ -46,6 +46,19 @@
   cursor: pointer;
 }
 
+/* For Japan */
+.path-visited-japan {
+  stroke: #3f3f46;
+  stroke-width: 0.2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.path-visited-japan:hover {
+  fill: #e30065;
+  cursor: pointer;
+}
+
 .path-not-visited {
   stroke: #3f3f46;
   stroke-width: 0.2;
