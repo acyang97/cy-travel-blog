@@ -52,4 +52,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 </figure>
 ```
 
-5. If it is a new country, add visited label to the mapData.ts
+5. If it is a new country, add visited label to the mapData.ts and countryData.ts. We also need to add a picture for the countryPreview

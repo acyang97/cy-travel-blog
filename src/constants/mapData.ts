@@ -181,7 +181,11 @@ export const mapData: Geography = {
           type: "Polygon",
           arcs: [[114, 115]],
           id: "BRN",
-          properties: { name: "Brunei", formattedName: "Brunei" },
+          properties: {
+            name: "Brunei",
+            formattedName: "Brunei",
+            visited: true,
+          },
         },
         {
           type: "Polygon",

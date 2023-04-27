@@ -2,9 +2,10 @@
 import { useWindowSize } from "@/hooks/useWindowSize";
 import { geoPath, geoEqualEarth } from "d3";
 import Link from "next/link";
-import { useState } from "react";
-import "rsuite/dist/rsuite.min.css";
+// https://github.com/rsuite/rsuite/issues/1953
+import "rsuite/dist/rsuite-no-reset.min.css";
 import { Tooltip, Whisper } from "rsuite";
+import { getColorToFillCountry } from "@/utils/country.utils";
 
 interface Props {
   data: any;
@@ -62,7 +63,9 @@ export const Marks = (props: Props) => {
                       d={path(feature) as string}
                       fill={
                         feature.properties.visited === true
-                          ? "#eab308"
+                          ? getColorToFillCountry(
+                              feature.properties.formattedName
+                            )
                           : "#cbd5e1"
                       }
                     />

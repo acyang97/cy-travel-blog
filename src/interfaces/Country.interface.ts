@@ -4,6 +4,7 @@ export interface Country {
   posts: string[];
   dialCode: string;
   visited: boolean;
+  percentageOfCountryVisited?: number;
   code?: string;
   continent: Continent;
   introduction?: string;

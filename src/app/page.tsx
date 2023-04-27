@@ -7,6 +7,12 @@ const HomePage = () => {
     <div>
       <HomePageHeader />
       <div className="mx-6 md:mx-12">
+        <div className="flex items-center justify-center">
+          <p>
+            If a country is filled with a darker color, it means I've explored
+            more of it. :)
+          </p>
+        </div>
         <D3WorldMap />
       </div>
     </div>
