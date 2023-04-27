@@ -1,5 +1,5 @@
 "use client";
-import AppMap from "@/components/AppMap";
+import D3WorldMap from "@/components/D3Map/D3WorldMap";
 import HomePageHeader from "./HomePageHeader";
 
 const HomePage = () => {
@@ -7,7 +7,7 @@ const HomePage = () => {
     <div>
       <HomePageHeader />
       <div className="mx-6 md:mx-12">
-        <AppMap />
+        <D3WorldMap />
       </div>
     </div>
   );
