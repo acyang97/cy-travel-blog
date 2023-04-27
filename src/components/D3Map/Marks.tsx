@@ -9,25 +9,22 @@ interface Props {
 }
 
 const getBestWidth = (width: number) => {
-  if (width <= 320) {
-    return 210;
-  }
   if (width <= 480) {
-    return 350;
+    return 320;
   }
   if (width <= 768) {
     return 500;
   }
   if (width <= 1024) {
-    return 800;
+    return 768;
   }
   if (width <= 1224) {
-    return 1000;
+    return 1024;
   }
   if (width <= 1824) {
-    return 1300;
+    return 1224;
   }
-  return width;
+  return 1824;
 };
 
 export const Marks = (props: Props) => {
