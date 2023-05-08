@@ -651,7 +651,7 @@ export const mapData: Geography = {
             ],
           ],
           id: "KAZ",
-          properties: { name: "Kazakhstan", formattedName: "Kazakhstan" },
+          properties: { name: "Kazakhstan", formattedName: "Kazakhstan", visited: true },
         },
         {
           type: "Polygon",
@@ -1251,7 +1251,7 @@ export const mapData: Geography = {
           type: "Polygon",
           arcs: [[-668, -421, -441, -666, -2]],
           id: "UZB",
-          properties: { name: "Uzbekistan", formattedName: "Uzbekistan" },
+          properties: { name: "Uzbekistan", formattedName: "Uzbekistan", visited: true },
         },
         {
           type: "Polygon",

@@ -84,7 +84,11 @@ const CountryPhotosCarousel = (props: Props) => {
       >
         {countryPhotos?.previewPhotos.map((photo, index) => (
           <SwiperSlide key={index} className="h-auto">
-            <img src={photo.photoUrl} className="mx-auto" />
+            <img
+              src={photo.photoUrl}
+              className="mx-auto sm:w-full md:w-10/12"
+              alt={photo.photoCaption}
+            />
           </SwiperSlide>
         ))}
         <div className="flex items-center justify-center">

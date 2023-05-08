@@ -869,9 +869,13 @@ export const countriesData: Country[] = [
     name: "Kazakhstan",
     dialCode: "+77",
     code: "KZ",
-    visited: false,
+    visited: true,
     posts: [],
     continent: Continent.ASIA,
+    year: 2023,
+    percentageOfCountryVisited: 20,
+    introduction:
+      "Kazakhstan is the world's largest landlocked country and is located in the heart of Central Asia. The country boasts diverse landscapes, including rugged mountains, vast steppes, and a shoreline along the Caspian Sea. Its capital, Nur-Sultan, is a modern city that contrasts with the traditional rural life found in the countryside. Kazakhstan is a multicultural country, home to dozens of ethnic groups, and visitors can experience the local traditions and customs by participating in cultural festivals and events throughout the year.",
   },
   {
     name: "Kenya",
@@ -1818,9 +1822,13 @@ export const countriesData: Country[] = [
     name: "Uzbekistan",
     dialCode: "+998",
     code: "UZ",
-    visited: false,
+    visited: true,
     posts: [],
     continent: Continent.ASIA,
+    year: 2023,
+    percentageOfCountryVisited: 80,
+    introduction:
+      "Uzbekistan is a Central Asian country known for its stunning Islamic architecture, rich history, and vibrant cultural heritage. The cities of Samarkand, Bukhara, and Khiva are famous for their well-preserved ancient monuments, including mosques, mausoleums, and madrassas, that showcase the region's remarkable artistic and architectural achievements. With a warm and welcoming population, delicious cuisine, and breathtaking landscapes, Uzbekistan offers travelers a unique and unforgettable experience.",
   },
   {
     name: "Vanuatu",

@@ -41,8 +41,6 @@ const CountryPage = (props: Props) => {
     ));
   }
 
-  // Make a condition to say if it is Japan, show a specific compoentn
-
   const introduction = getCountry(countrySlug)?.introduction;
   const countryCode = getCountry(countrySlug)?.code;
 
