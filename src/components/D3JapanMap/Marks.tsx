@@ -41,6 +41,7 @@ export const Marks = (props: Props) => {
           {data?.features?.map((feature: any) => {
             return (
               <Whisper
+                key={feature.properties.name}
                 followCursor
                 speaker={<Tooltip>{feature.properties.name}</Tooltip>}
               >
