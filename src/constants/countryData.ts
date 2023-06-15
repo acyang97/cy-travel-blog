@@ -907,7 +907,7 @@ export const countriesData: Country[] = [
     code: "KR",
     visited: true,
     percentageOfCountryVisited: 50,
-    year: 2019,
+    year: 2023,
     posts: ["Cycling-Through-Wonders-In-Jeju-In-4-Days"],
     continent: Continent.ASIA,
     introduction:
