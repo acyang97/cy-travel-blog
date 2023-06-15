@@ -181,14 +181,14 @@ There was another weird strip of land on my way to Seongsan as well. Don't think
   <figcaption align="center" style="font-weight:200;color:black"><b>I don't know how to describe this</b></figcaption>
 </figure>
 
-Before reaching Seongsan, I could already see Seongsan Ilchulbong from far apart, it was more massive than I thought and pictresque.
+Before reaching Seongsan, I could already see Seongsan Ilchulbong from far apart, it was more massive than I thought and picturesque.
 
 <figure style="text-align:center">
   <center><img src="https://imagedelivery.net/zHaoQUqTgVRyao5aPR7rcg/7d672879-05be-4507-a42e-4bb8e7d80b00/public" alt="Seongsan Ilchulbong" style="width:90%;margin:0" align="center"></center>
   <figcaption align="center" style="font-weight:200;color:black"><b>Seongsan Ilchulbong from afar</b></figcaption>
 </figure>
 
-After reaching my hostel and checking in, I spotted cafe where two dogs whose owners are no where to be found just going towards and jumping to me. Damn I love dogs.
+After reaching my hostel and checking in, I spotted a cafe where two dogs whose owners are no where to be found just going towards and jumping to me. Spent some time just hanging around there and dog-watching. Damn I love dogs.
 
 <figure style="text-align:center">
   <center><img src="https://imagedelivery.net/zHaoQUqTgVRyao5aPR7rcg/de0646cc-78fa-4cab-d671-4de68818dd00/public" alt="One of the dogs" style="width:90%;margin:0" align="center"></center>
