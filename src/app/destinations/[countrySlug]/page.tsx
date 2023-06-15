@@ -1,7 +1,7 @@
 "use cient";
 import { checkIfCountryExistHasPost, getCountry } from "@/utils/country.utils";
 import { getPostMetadata } from "@/utils/getPostMetadata";
-import PostPreview from "./PostPreview";
+import PostPreview from "../../../components/PostPreview";
 import { notFound } from "next/navigation";
 import { countriesTravelledTo } from "@/constants/country.constants";
 import ScrollUp from "../../../components/ScrollUp";

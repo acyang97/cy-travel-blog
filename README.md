@@ -4,14 +4,14 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 First, run the development server:
 
-```bash
+````bash
 nvm use
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-```
+```REA
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -45,7 +45,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 3. Ensure that the `md` file contains all the required metadata of `title`, `subtitle`, `date`, `previewPhoto`, `time`
 4. The template for adding a photo is below. Replace the
 
-```
+````
+
 <figure style="text-align:center">
   <center><img src="https://imagedelivery.net/zHaoQUqTgVRyao5aPR7rcg/<imageId>/<variant>" alt="<INSERT ALT TEXT>" style="width:100%;margin:0" align="center"></center>
   <figcaption align="center" style="font-weight:200;color:black"><b>INSERT SUBTITLE</b></figcaption>

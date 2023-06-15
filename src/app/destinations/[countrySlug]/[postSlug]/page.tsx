@@ -6,6 +6,7 @@ import { checkIfPostExistByCountry } from "@/utils/country.utils";
 import { countriesTravelledTo } from "@/constants/country.constants";
 import ScrollUp from "@/components/ScrollUp";
 import BackToCountryButton from "@/components/BackToCountryButton";
+import Script from "next/script";
 
 interface PostPageSlugs {
   countrySlug: string;
@@ -82,6 +83,7 @@ const PostPage = (props: Props) => {
           text="View more posts on "
         />
       </div>
+      <Script async src="//www.instagram.com/embed.js"></Script>
     </div>
   );
 };

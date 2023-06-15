@@ -6,7 +6,7 @@ import { checkIfCountryExistHasPost, getCountry } from "@/utils/country.utils";
 import { getPostMetadata } from "@/utils/getPostMetadata";
 import CountryPageHeader from "../CountryPageHeader";
 import NoPostsYet from "../NoPostsYet";
-import PostPreview from "../PostPreview";
+import PostPreview from "../../../../components/PostPreview";
 
 interface Props {
   countrySlug: string;

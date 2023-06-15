@@ -908,7 +908,7 @@ export const countriesData: Country[] = [
     visited: true,
     percentageOfCountryVisited: 50,
     year: 2019,
-    posts: [],
+    posts: ["Cycling-Through-Wonders-In-Jeju-In-4-Days"],
     continent: Continent.ASIA,
     introduction:
       "South Korea is a beautiful country located in East Asia, known for its rich culture, modern cities, and delicious cuisine. Visitors to South Korea can explore the bustling streets of Seoul, the historic sites of Gyeongju, and the beautiful beaches of Jeju Island. The country is also home to a variety of natural wonders, including the stunning Seoraksan National Park and the beautiful Nami Island. Korean cuisine is delicious and diverse, with traditional dishes like kimchi, bibimbap, and bulgogi all on offer. With its rich culture, stunning landscapes, and warm hospitality, South Korea is a destination that's sure to leave a lasting impression on any traveler.",
