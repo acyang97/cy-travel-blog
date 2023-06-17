@@ -18,12 +18,12 @@ const HomePageHeader = () => {
             Welcome to my Travel Blog!
           </h1>
           <p className="mt-8 mb-2 mx-3 leading-relaxed">
-            My name is Chun Yang, a 26 year old Singaporean who loves
-            travelling! I particularly enjoy solo travelling to off the beaten
-            path destinations! I find that myself having the best experiences
-            when I set off without a proper plan! Aside from travelling, I also
-            enjoy bouldering, photography and watching sports! Fun fact: I have
-            many nicknames like Chun, Chunses, Amirul, Julian :)
+            My name is Chun Yang, a 26 year old Singaporean who loves traveling!
+            I particularly enjoy solo traveling to off the beaten path
+            destinations! I find that myself having the best experiences when I
+            set off without a proper plan! Aside from traveling, I also enjoy
+            bouldering, photography and watching sports! Fun fact: I have many
+            nicknames like Chun, Chunses, Amirul, Julian :)
           </p>
         </div>
         <div className="text-center my-4">
