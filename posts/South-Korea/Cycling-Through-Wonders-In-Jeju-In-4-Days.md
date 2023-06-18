@@ -269,7 +269,7 @@ Try asking your hostel/hotel at Jeju city if you could leave your bags in their 
 
 ## What to pack?
 
-Pack super light, especially if your bike shop does not provide you with panniers to put your stuff. For me, the bike shop did not provide one, so I only packed 1 set of shirt and pants for sleeping, 3 underwears, toothbrush & toothpaste, UV jacket, chargers and a laptop (lmao). I brought my laptop for job preparation for job junting. If you minus away the laptop, your bag should be pretty light and your back should not be so sore even if the bike shop does not have prove panniers. No need to worry about towels/toiletries, every accomodation I went to provided it.
+Pack super light, especially if your bike shop does not provide you with panniers to put your stuff. For me, the bike shop did not provide one, so I only packed 1 set of shirt and pants for sleeping, 3 underwears, toothbrush & toothpaste, UV jacket, chargers and a laptop (lmao). I brought my laptop for job junting and interview preparation. If you minus away the laptop, your bag should be pretty light and your back should not be so sore even if the bike shop does not provide panniers. No need to worry about towels/toiletries, every accomodation I went to provided it.
 
 ## Final thoughts
 
