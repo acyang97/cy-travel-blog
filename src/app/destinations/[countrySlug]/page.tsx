@@ -16,6 +16,29 @@ interface Props {
   };
 }
 
+export async function generateMetadata({
+  params,
+}: {
+  params: { countrySlug: string };
+}) {
+  try {
+    const { countrySlug } = params;
+    if (!getCountry(countrySlug)) {
+      throw new Error();
+    }
+    const introduction = getCountry(countrySlug)?.introduction;
+    return {
+      title: `${countrySlug} | ChunTravels`,
+      description: introduction,
+    };
+  } catch (error) {
+    return {
+      title: "Not Found",
+      description: "This page cannot be found",
+    };
+  }
+}
+
 export const generateStaticParams = async (): Promise<
   {
     countrySlug: string;
