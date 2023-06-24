@@ -1,5 +1,3 @@
-"use client";
-
 import D3WorldMap from "@/components/D3Map/D3WorldMap";
 import HomePageHeader from "./HomePageHeader";
 import LatestPosts from "./LatestPosts";
