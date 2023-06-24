@@ -1,15 +1,27 @@
+"use client";
+
 import { PostMetadata } from "@/interfaces/PostMetadata";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 interface Props {
   post: PostMetadata;
   slug: string;
+  fromDestinationPage: boolean;
 }
 
 const PostPreview = (props: Props) => {
-  const { post, slug } = props;
+  const router = useRouter();
+  const { post, slug, fromDestinationPage } = props;
   const { previewPhoto, title, subtitle } = post;
+
+  let formattedNextLink = "";
+  if (!fromDestinationPage) {
+    formattedNextLink += "destinations/";
+  }
+  formattedNextLink += `${slug}/${post.slug}`;
+
   return (
     // <div className="w-full overflow-hidden rounded-lg shadow-lg bg-sky-800">
     <div className="w-11/12 mx-auto bg-sky-700 border border-gray-200 rounded-lg shadow">
@@ -26,15 +38,18 @@ const PostPreview = (props: Props) => {
       />
 
       <div className="p-5">
-        <Link href={`destinations/${slug}/${post.slug}`}>
+        <div
+          className="cursor-pointer"
+          onClick={() => router.push(formattedNextLink)}
+        >
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
             {title}
           </h5>
-        </Link>
+        </div>
         <p className="mb-3 font-normal text-white">{subtitle}</p>
-        <Link
-          href={`destinations/${slug}/${post.slug}`}
-          className="inline-flex items-center py-2 text-sm font-medium text-center text-white"
+        <div
+          onClick={() => router.push(formattedNextLink)}
+          className="inline-flex items-center py-2 text-sm font-medium text-center text-white cursor-pointer"
         >
           Read more
           <svg
@@ -50,7 +65,7 @@ const PostPreview = (props: Props) => {
               clipRule="evenodd"
             ></path>
           </svg>
-        </Link>
+        </div>
       </div>
     </div>
   );
