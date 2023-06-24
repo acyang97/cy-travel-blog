@@ -1,7 +1,16 @@
 "use client";
+
 import D3WorldMap from "@/components/D3Map/D3WorldMap";
 import HomePageHeader from "./HomePageHeader";
 import LatestPosts from "./LatestPosts";
+
+export const generateMetadata = () => {
+  return {
+    title: "ChunTravels - My Own Travel Blog",
+    description:
+      "a 26 year old Singaporean who loves traveling!I particularly enjoy solo traveling to off the beaten path destinations!",
+  };
+};
 
 const HomePage = () => {
   return (
