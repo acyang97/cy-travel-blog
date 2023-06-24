@@ -14,10 +14,8 @@ interface PostPageSlugs {
 }
 
 interface Props {
-  params: {
-    countrySlug: string;
-    postSlug: string;
-  };
+  countrySlug: string;
+  post: matter.GrayMatterFile<string>;
 }
 
 const getPostContent = (
@@ -44,18 +42,46 @@ export const generateStaticParams = async (): Promise<PostPageSlugs[]> => {
   return paths;
 };
 
-const PostPage = (props: Props) => {
-  const { countrySlug, postSlug } = props.params;
+export const getStaticProps = async ({
+  params,
+}: {
+  params: { countrySlug: string; postSlug: string };
+}): Promise<{
+  props: {
+    post: matter.GrayMatterFile<string>;
+    countrySlug: string;
+  };
+}> => {
+  const { countrySlug, postSlug } = params;
   const { countryNameExist, postNameExist } = checkIfPostExistByCountry(
     countrySlug,
     postSlug
   );
   if (!countryNameExist || !postNameExist) {
-    // TODO: Update the logic here to configure it more nicely depending on which is missing
     notFound();
   }
   const post = getPostContent(countrySlug, postSlug);
+  return {
+    props: {
+      post,
+      countrySlug: countrySlug,
+    },
+  };
+};
 
+const PostPage = (props: Props) => {
+  // const { countrySlug, postSlug } = props.params;
+  // const { countryNameExist, postNameExist } = checkIfPostExistByCountry(
+  //   countrySlug,
+  //   postSlug
+  // );
+  // if (!countryNameExist || !postNameExist) {
+  //   // TODO: Update the logic here to configure it more nicely depending on which is missing
+  //   notFound();
+  // }
+  // const post = getPostContent(countrySlug, postSlug);
+
+  const { post, countrySlug } = props;
   return (
     <div>
       <ScrollUp />
