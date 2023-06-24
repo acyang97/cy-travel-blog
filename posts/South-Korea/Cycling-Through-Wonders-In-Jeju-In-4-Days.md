@@ -1,6 +1,6 @@
 ---
 title: "Cycling Through Wonders In Jeju In 4 Days"
-subtitle: "Exploring Jeju in another way!"
+subtitle: "Can't drive, explore Jeju in another way by cycling!"
 date: "2023-06-15"
 previewPhoto: "https://imagedelivery.net/zHaoQUqTgVRyao5aPR7rcg/2d6e5398-e82a-4cb8-4803-5708b4c53a00/public"
 time: "7"

@@ -1,4 +1,5 @@
 "use client";
+
 import { countriesTravelledTo } from "@/constants/country.constants";
 import { Continent } from "@/interfaces/Country.interface";
 import { Tab } from "@headlessui/react";

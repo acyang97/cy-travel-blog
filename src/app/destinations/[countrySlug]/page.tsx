@@ -1,4 +1,3 @@
-"use cient";
 import { checkIfCountryExistHasPost, getCountry } from "@/utils/country.utils";
 import { getPostMetadata } from "@/utils/getPostMetadata";
 import PostPreview from "../../../components/PostPreview";
@@ -15,6 +14,29 @@ interface Props {
   params: {
     countrySlug: string;
   };
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { countrySlug: string };
+}) {
+  try {
+    const { countrySlug } = params;
+    if (!getCountry(countrySlug)) {
+      throw new Error();
+    }
+    const introduction = getCountry(countrySlug)?.introduction;
+    return {
+      title: `${countrySlug} | ChunTravels`,
+      description: introduction,
+    };
+  } catch (error) {
+    return {
+      title: "Not Found",
+      description: "This page cannot be found",
+    };
+  }
 }
 
 export const generateStaticParams = async (): Promise<

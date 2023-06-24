@@ -13,23 +13,32 @@ interface PostPageSlugs {
   postSlug: string;
 }
 
-interface Props {
-  params: {
-    countrySlug: string;
-    postSlug: string;
-  };
+export async function generateMetadata({
+  params,
+}: {
+  params: { countrySlug: string; postSlug: string };
+}) {
+  try {
+    const { countrySlug, postSlug } = params;
+    const { countryNameExist, postNameExist } = checkIfPostExistByCountry(
+      countrySlug,
+      postSlug
+    );
+    if (!countryNameExist || !postNameExist) {
+      throw new Error();
+    }
+    const post = getPostContent(countrySlug, postSlug);
+    return {
+      title: `${post.data.title} | ChunTravels`,
+      description: post.data.subtitle,
+    };
+  } catch (error) {
+    return {
+      title: "Not Found",
+      description: "This page cannot be found",
+    };
+  }
 }
-
-const getPostContent = (
-  countrySlug: string,
-  postSlug: string
-): matter.GrayMatterFile<string> => {
-  const folder = "posts/";
-  const file = `${folder}${countrySlug}/${postSlug}.md`;
-  const content = fs.readFileSync(file, "utf8");
-  const matterResult = matter(content);
-  return matterResult;
-};
 
 export const generateStaticParams = async (): Promise<PostPageSlugs[]> => {
   let paths: PostPageSlugs[] = [];
@@ -44,8 +53,23 @@ export const generateStaticParams = async (): Promise<PostPageSlugs[]> => {
   return paths;
 };
 
-const PostPage = (props: Props) => {
-  const { countrySlug, postSlug } = props.params;
+const getPostContent = (
+  countrySlug: string,
+  postSlug: string
+): matter.GrayMatterFile<string> => {
+  const folder = "posts/";
+  const file = `${folder}${countrySlug}/${postSlug}.md`;
+  const content = fs.readFileSync(file, "utf8");
+  const matterResult = matter(content);
+  return matterResult;
+};
+
+const PostPage = ({
+  params,
+}: {
+  params: { countrySlug: string; postSlug: string };
+}) => {
+  const { countrySlug, postSlug } = params;
   const { countryNameExist, postNameExist } = checkIfPostExistByCountry(
     countrySlug,
     postSlug
