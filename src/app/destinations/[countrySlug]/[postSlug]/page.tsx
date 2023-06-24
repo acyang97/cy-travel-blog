@@ -29,7 +29,7 @@ export async function generateMetadata({
     }
     const post = getPostContent(countrySlug, postSlug);
     return {
-      title: `${post.data.title} | ChunTravels`,
+      title: `${countrySlug} - ${post.data.title} | ChunTravels`,
       description: post.data.subtitle,
     };
   } catch (error) {

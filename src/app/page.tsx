@@ -4,9 +4,9 @@ import LatestPosts from "./LatestPosts";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ChunTravels - My Own Travel Blog",
+  title: "Home | ChunTravels - Travel Blog",
   description:
-    "a 26 year old Singaporean who loves traveling!I particularly enjoy solo traveling to off the beaten path destinations!",
+    "A 26 year old Singaporean who loves traveling!I particularly enjoy solo traveling to off the beaten path destinations!",
 };
 
 const HomePage = () => {
