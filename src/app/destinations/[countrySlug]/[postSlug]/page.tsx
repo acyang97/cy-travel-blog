@@ -1,5 +1,3 @@
-"use client";
-
 import fs from "fs";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
@@ -15,24 +13,36 @@ interface PostPageSlugs {
   postSlug: string;
 }
 
-interface Props {
-  params: {
-    countrySlug: string;
-    postSlug: string;
-  };
-  // post: matter.GrayMatterFile<string>;
+export async function generateMetadata({
+  params,
+}: {
+  params: { countrySlug: string; postSlug: string };
+}) {
+  try {
+    const { countrySlug, postSlug } = params;
+    const { countryNameExist, postNameExist } = checkIfPostExistByCountry(
+      countrySlug,
+      postSlug
+    );
+    if (!countryNameExist || !postNameExist) {
+      throw new Error();
+    }
+    const post = getPostContent(countrySlug, postSlug);
+    console.log({
+      title: post.data.title,
+      description: post.data.subtitle,
+    });
+    return {
+      title: post.data.title,
+      description: post.data.subtitle,
+    };
+  } catch (error) {
+    return {
+      title: "Not Found",
+      description: "Hello",
+    };
+  }
 }
-
-const getPostContent = (
-  countrySlug: string,
-  postSlug: string
-): matter.GrayMatterFile<string> => {
-  const folder = "posts/";
-  const file = `${folder}${countrySlug}/${postSlug}.md`;
-  const content = fs.readFileSync(file, "utf8");
-  const matterResult = matter(content);
-  return matterResult;
-};
 
 export const generateStaticParams = async (): Promise<PostPageSlugs[]> => {
   let paths: PostPageSlugs[] = [];
@@ -47,35 +57,23 @@ export const generateStaticParams = async (): Promise<PostPageSlugs[]> => {
   return paths;
 };
 
-// export const getStaticProps = async ({
-//   params,
-// }: {
-//   params: { countrySlug: string; postSlug: string };
-// }): Promise<{
-//   props: {
-//     post: matter.GrayMatterFile<string>;
-//     countrySlug: string;
-//   };
-// }> => {
-//   const { countrySlug, postSlug } = params;
-//   const { countryNameExist, postNameExist } = checkIfPostExistByCountry(
-//     countrySlug,
-//     postSlug
-//   );
-//   if (!countryNameExist || !postNameExist) {
-//     notFound();
-//   }
-//   const post = getPostContent(countrySlug, postSlug);
-//   return {
-//     props: {
-//       post,
-//       countrySlug: countrySlug,
-//     },
-//   };
-// };
+const getPostContent = (
+  countrySlug: string,
+  postSlug: string
+): matter.GrayMatterFile<string> => {
+  const folder = "posts/";
+  const file = `${folder}${countrySlug}/${postSlug}.md`;
+  const content = fs.readFileSync(file, "utf8");
+  const matterResult = matter(content);
+  return matterResult;
+};
 
-const PostPage = (props: Props) => {
-  const { countrySlug, postSlug } = props.params;
+const PostPage = ({
+  params,
+}: {
+  params: { countrySlug: string; postSlug: string };
+}) => {
+  const { countrySlug, postSlug } = params;
   const { countryNameExist, postNameExist } = checkIfPostExistByCountry(
     countrySlug,
     postSlug
@@ -86,7 +84,6 @@ const PostPage = (props: Props) => {
   }
   const post = getPostContent(countrySlug, postSlug);
 
-  // const { post, countrySlug } = props;
   return (
     <div>
       <ScrollUp />
