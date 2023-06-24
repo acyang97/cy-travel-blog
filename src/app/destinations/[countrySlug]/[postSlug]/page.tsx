@@ -1,3 +1,5 @@
+"use client";
+
 import fs from "fs";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
@@ -14,8 +16,11 @@ interface PostPageSlugs {
 }
 
 interface Props {
-  countrySlug: string;
-  post: matter.GrayMatterFile<string>;
+  params: {
+    countrySlug: string;
+    postSlug: string;
+  };
+  // post: matter.GrayMatterFile<string>;
 }
 
 const getPostContent = (
@@ -42,46 +47,46 @@ export const generateStaticParams = async (): Promise<PostPageSlugs[]> => {
   return paths;
 };
 
-export const getStaticProps = async ({
-  params,
-}: {
-  params: { countrySlug: string; postSlug: string };
-}): Promise<{
-  props: {
-    post: matter.GrayMatterFile<string>;
-    countrySlug: string;
-  };
-}> => {
-  const { countrySlug, postSlug } = params;
+// export const getStaticProps = async ({
+//   params,
+// }: {
+//   params: { countrySlug: string; postSlug: string };
+// }): Promise<{
+//   props: {
+//     post: matter.GrayMatterFile<string>;
+//     countrySlug: string;
+//   };
+// }> => {
+//   const { countrySlug, postSlug } = params;
+//   const { countryNameExist, postNameExist } = checkIfPostExistByCountry(
+//     countrySlug,
+//     postSlug
+//   );
+//   if (!countryNameExist || !postNameExist) {
+//     notFound();
+//   }
+//   const post = getPostContent(countrySlug, postSlug);
+//   return {
+//     props: {
+//       post,
+//       countrySlug: countrySlug,
+//     },
+//   };
+// };
+
+const PostPage = (props: Props) => {
+  const { countrySlug, postSlug } = props.params;
   const { countryNameExist, postNameExist } = checkIfPostExistByCountry(
     countrySlug,
     postSlug
   );
   if (!countryNameExist || !postNameExist) {
+    // TODO: Update the logic here to configure it more nicely depending on which is missing
     notFound();
   }
   const post = getPostContent(countrySlug, postSlug);
-  return {
-    props: {
-      post,
-      countrySlug: countrySlug,
-    },
-  };
-};
 
-const PostPage = (props: Props) => {
-  // const { countrySlug, postSlug } = props.params;
-  // const { countryNameExist, postNameExist } = checkIfPostExistByCountry(
-  //   countrySlug,
-  //   postSlug
-  // );
-  // if (!countryNameExist || !postNameExist) {
-  //   // TODO: Update the logic here to configure it more nicely depending on which is missing
-  //   notFound();
-  // }
-  // const post = getPostContent(countrySlug, postSlug);
-
-  const { post, countrySlug } = props;
+  // const { post, countrySlug } = props;
   return (
     <div>
       <ScrollUp />
