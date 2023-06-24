@@ -19,7 +19,12 @@ const JapanCustomizedPage = (props: Props) => {
   if (checkIfCountryExistHasPost(countrySlug)) {
     const postMetadata = getPostMetadata(countrySlug) as PostMetadata[];
     postPreviews = postMetadata.map((post) => (
-      <PostPreview key={post.slug} post={post} slug={countrySlug} />
+      <PostPreview
+        key={post.slug}
+        post={post}
+        slug={countrySlug}
+        fromDestinationPage={true}
+      />
     ));
   }
 

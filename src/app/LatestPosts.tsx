@@ -44,6 +44,7 @@ const LatestPosts = () => {
   const postPreviews = LATEST_POSTS.map((post) => (
     // slug is country
     <PostPreview
+      fromDestinationPage={false}
       key={post.countryName}
       post={post.post}
       slug={post.countryName}
