@@ -28,18 +28,14 @@ export async function generateMetadata({
       throw new Error();
     }
     const post = getPostContent(countrySlug, postSlug);
-    console.log({
-      title: post.data.title,
-      description: post.data.subtitle,
-    });
     return {
-      title: post.data.title,
+      title: `${post.data.title} | ChunTravels`,
       description: post.data.subtitle,
     };
   } catch (error) {
     return {
       title: "Not Found",
-      description: "Hello",
+      description: "This page cannot be found",
     };
   }
 }
