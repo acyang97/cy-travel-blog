@@ -24,7 +24,7 @@ const LatestPosts = () => {
         previewPhoto:
           "https://imagedelivery.net/zHaoQUqTgVRyao5aPR7rcg/95e21024-2cf1-4ba6-6ff1-c4aed9133800/public",
         time: "3",
-        slug: "Cherry-Blossom-Paradise-In-Kanazawa.md",
+        slug: "Cherry-Blossom-Paradise-In-Kanazawa",
       },
       countryName: "Japan",
     },
@@ -36,7 +36,7 @@ const LatestPosts = () => {
         previewPhoto:
           "https://imagedelivery.net/zHaoQUqTgVRyao5aPR7rcg/d7561c5e-9161-47df-761c-e9a9d9dabf00/public",
         time: "3",
-        slug: "3-Reasons-To-Travel-To-Albania.md",
+        slug: "3-Reasons-To-Travel-To-Albania",
       },
       countryName: "Albania",
     },
