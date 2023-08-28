@@ -1,5 +1,3 @@
-"use client";
-
 const DestinationsPageHeader = () => {
   return (
     <header className="text-gray-600 body-font">

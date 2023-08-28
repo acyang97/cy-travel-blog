@@ -40,9 +40,9 @@ export async function generateMetadata({
   }
 }
 
-export const generateStaticParams = async (): Promise<PostPageSlugs[]> => {
+export async function generateStaticParams(): Promise<PostPageSlugs[]> {
   let paths: PostPageSlugs[] = [];
-  countriesTravelledTo.forEach((country) => {
+  await countriesTravelledTo.forEach((country) => {
     country.posts.forEach((postSlug) => {
       paths.push({
         countrySlug: country.name,
@@ -51,7 +51,7 @@ export const generateStaticParams = async (): Promise<PostPageSlugs[]> => {
     });
   });
   return paths;
-};
+}
 
 const getPostContent = (
   countrySlug: string,
@@ -107,7 +107,6 @@ const PostPage = ({
           text="View more posts on "
         />
       </div>
-      <Script async src="//www.instagram.com/embed.js"></Script>
     </div>
   );
 };

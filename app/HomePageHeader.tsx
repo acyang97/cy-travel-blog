@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 import HomePageHeaderImage from "../public/images/HomePage/home-page-header.jpg";

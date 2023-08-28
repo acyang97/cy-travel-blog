@@ -7,7 +7,7 @@ import { Marks } from "./Marks";
 const D3WorldMap = () => {
   const geojsonData = useGetGeoJsonData(mapData);
 
-  return <Marks data={geojsonData} key={Math.random()} />;
+  return <Marks data={geojsonData} key="D3WorldMap" />;
 };
 
 export default D3WorldMap;

@@ -7,7 +7,7 @@ import { Marks } from "./Marks";
 const D3JapanMap = () => {
   const geojsonData = useGetJapanGeoJsonData(japanMapData);
 
-  return <Marks data={geojsonData} />;
+  return <Marks data={geojsonData} key="D3JapanMap" />;
 };
 
 export default D3JapanMap;

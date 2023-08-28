@@ -1,4 +1,3 @@
-"use client";
 import Script from "next/script";
 import React from "react";
 import "./global.css";
@@ -49,6 +48,11 @@ export default function RootLayout({
         </main>
       </body>
       <GoogleAnalytics measurementId="G-RZ23RK8D93" />
+      <Script
+        async
+        src="https://platform.instagram.com/en_US/embeds.js"
+      ></Script>
+      <Script async src="//www.instagram.com/embed.js"></Script>
     </html>
   );
 }

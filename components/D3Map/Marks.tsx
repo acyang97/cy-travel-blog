@@ -42,7 +42,7 @@ export const Marks = (props: Props) => {
             if (feature.properties.visited) {
               return (
                 <Link
-                  key={feature.properties.id}
+                  key={feature.properties.formattedName}
                   href={`/destinations/${feature.properties.formattedName}`}
                   role="link"
                 >
@@ -69,9 +69,10 @@ export const Marks = (props: Props) => {
               <Whisper
                 followCursor
                 speaker={<Tooltip>{feature.properties.name}</Tooltip>}
-                key={feature.properties.id}
+                key={feature.properties.formattedName}
               >
                 <path
+                  key={feature.properties.id}
                   className="path-not-visited"
                   d={path(feature) as string}
                   fill="#cbd5e1"

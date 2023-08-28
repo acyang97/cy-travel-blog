@@ -39,15 +39,15 @@ export async function generateMetadata({
   }
 }
 
-export const generateStaticParams = async (): Promise<
+export async function generateStaticParams(): Promise<
   {
     countrySlug: string;
   }[]
-> => {
+> {
   return countriesTravelledTo.map((country) => ({
     countrySlug: country.name,
   }));
-};
+}
 
 const CountryPage = (props: Props) => {
   const { countrySlug } = props.params;
