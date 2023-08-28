@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
+  staticPageGenerationTimeout: 6000 * 5,
   images: {
-    domains: ["imagedelivery.net"],
+    domains: ["imagedelivery.net", "instagram.com"],
   },
 };
 
